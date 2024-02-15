@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1FFCA3AB-EEA8-4181-AA63-691964B7E4F8}" SchemaVersion="94">
+	<Queries>
+		<WorkUnit Name="Default Work Unit" ID="{1FFCA3AB-EEA8-4181-AA63-691964B7E4F8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Query Name="_Everything" ID="{86EBFAAB-5885-407E-B646-5AF5CD24D475}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<SearchCriteria Name="PropertyValue" ID="{A50D16C1-B417-44A3-9193-D9B793C2D3CA}" SearchOperationID="{560736B7-4F5C-4EF7-9354-8D8DC6BBD70A}">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool" Value="False"/>
+								<Property Name="LeftValue" Type="Real64" Value="24"/>
+								<Property Name="NumericOperator" Type="int16" Value="3"/>
+								<Property Name="PropertyName" Type="string" Value="Color"/>
+							</PropertyList>
+						</SearchCriteria>
+					</ChildrenList>
+				</Query>
+				<Folder Name="_RLProject_Dev_Util" ID="{427C6B7D-345B-4364-983F-9B251FD6439E}" ShortID="891248203">
+					<PropertyList>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Query Name="_PluginsMissing" ID="{DF9A8BE7-C2B9-48B1-938C-437E08A8BEC4}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="26"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<SearchCriteria Name="EffectEffect" ID="{470EB9D1-6DF3-4629-B2B9-49E45583014A}" SearchOperationID="{9A04AA3F-7155-4B80-BEE5-B433B936E469}">
+									<PropertyList>
+										<Property Name="EffectClassID" Type="string" Value="9109507"/>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+									</PropertyList>
+								</SearchCriteria>
+								<SearchCriteria Name="GeneralName" ID="{8DB5252E-C312-4777-B4F0-9C874E144447}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+										<Property Name="UserString" Type="string" Value="*MissingPlugin*"/>
+									</PropertyList>
+								</SearchCriteria>
+							</ChildrenList>
+						</Query>
+						<Query Name="_NamesPlaceholder" ID="{BB452A03-96D2-4BB0-B66D-7BC645C7F608}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="26"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<SearchCriteria Name="GeneralName" ID="{2DE90A47-A813-4661-9154-337950CA0E58}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+										<Property Name="UserString" Type="string" Value="_u*"/>
+									</PropertyList>
+								</SearchCriteria>
+							</ChildrenList>
+						</Query>
+						<Query Name="_NamesMissing" ID="{4759C69F-62A0-480E-9362-1263F2CF752C}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="26"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<SearchCriteria Name="Criteria GroupingGroup (And,Or)" ID="{64C02C9E-B312-4D4D-A441-91FEC920A2EF}" SearchOperationID="{BA7BCC3C-0C6F-4753-9B1A-B864C014D171}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+										<Property Name="LogicalOperator" Type="int32" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<SearchCriteria Name="GeneralName" ID="{6B58DD65-A0DD-4E93-A359-AF3FD20E5C8A}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool" Value="False"/>
+												<Property Name="UserString" Type="string" Value="h0*"/>
+											</PropertyList>
+										</SearchCriteria>
+										<SearchCriteria Name="GeneralName" ID="{C241EC39-2275-4CAC-8EE5-0DFA25CA241C}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool" Value="False"/>
+												<Property Name="UserString" Type="string" Value="h1*"/>
+											</PropertyList>
+										</SearchCriteria>
+										<SearchCriteria Name="GeneralName" ID="{94332D9D-4288-41E4-B3DB-9FC0B67010ED}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool" Value="False"/>
+												<Property Name="UserString" Type="string" Value="h2*"/>
+											</PropertyList>
+										</SearchCriteria>
+										<SearchCriteria Name="GeneralName" ID="{A32F98AB-7335-44C8-BF9B-EE9154E75C0D}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool" Value="False"/>
+												<Property Name="UserString" Type="string" Value="h3*"/>
+											</PropertyList>
+										</SearchCriteria>
+										<SearchCriteria Name="GeneralName" ID="{661379F5-D2BB-47E1-88FF-F5D4F39AF78C}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool" Value="False"/>
+												<Property Name="UserString" Type="string" Value="h4*"/>
+											</PropertyList>
+										</SearchCriteria>
+										<SearchCriteria Name="GeneralName" ID="{02D1A12C-5F19-488F-888C-C6293E4CD3AB}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool" Value="False"/>
+												<Property Name="UserString" Type="string" Value="h5*"/>
+											</PropertyList>
+										</SearchCriteria>
+										<SearchCriteria Name="GeneralName" ID="{189A984E-79F0-4294-B91B-16A857C9DA24}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool" Value="False"/>
+												<Property Name="UserString" Type="string" Value="h6*"/>
+											</PropertyList>
+										</SearchCriteria>
+										<SearchCriteria Name="GeneralName" ID="{B90ED489-5F0A-47A2-81FC-7C919BABA78A}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool" Value="False"/>
+												<Property Name="UserString" Type="string" Value="h7*"/>
+											</PropertyList>
+										</SearchCriteria>
+										<SearchCriteria Name="GeneralName" ID="{F73CDECE-2E6B-407B-9F53-3D4CDFCF2C3C}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool" Value="False"/>
+												<Property Name="UserString" Type="string" Value="h8*"/>
+											</PropertyList>
+										</SearchCriteria>
+										<SearchCriteria Name="GeneralName" ID="{5852F794-20C8-4CC9-AD06-A085A6F35C08}" SearchOperationID="{82CCCD47-591B-4BD8-B3CE-89A8172A1802}">
+											<PropertyList>
+												<Property Name="Inclusion" Type="bool" Value="False"/>
+												<Property Name="UserString" Type="string" Value="h9*"/>
+											</PropertyList>
+										</SearchCriteria>
+									</ChildrenList>
+								</SearchCriteria>
+							</ChildrenList>
+						</Query>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Util" ID="{62243177-0F85-4EE7-AA0E-9214F0A0E888}" ShortID="916875593">
+					<PropertyList>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Query Name="Effects_NotShareSets" ID="{49338D8B-AA7C-4B88-ACE9-F9DF33F5B0DC}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="ObjectType" Type="int32" Value="550"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<SearchCriteria Name="EffectMode" ID="{96B98D9B-9F92-40A1-B11F-2FF622C69280}" SearchOperationID="{18A3AA30-CBA7-44C4-B7AD-68A3145311C3}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+									</PropertyList>
+								</SearchCriteria>
+								<SearchCriteria Name="PropertyValue" ID="{3C4D715B-30C7-4046-AE67-1F9762C8FB06}" SearchOperationID="{560736B7-4F5C-4EF7-9354-8D8DC6BBD70A}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+										<Property Name="LeftValue" Type="Real64" Value="24"/>
+										<Property Name="NumericOperator" Type="int16" Value="3"/>
+										<Property Name="PropertyName" Type="string" Value="Color"/>
+									</PropertyList>
+								</SearchCriteria>
+							</ChildrenList>
+						</Query>
+						<Query Name="Attenuations_NotShareSets" ID="{C1DDEE11-A641-432A-8AC1-375D7C0AFC68}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="ObjectType" Type="int32" Value="250"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<SearchCriteria Name="PositioningAttenuationMode" ID="{851B4BF5-065B-4304-A48C-4406DC5CE9AE}" SearchOperationID="{8EE692A0-E0E6-4C8A-9EBC-A424FADB17C8}">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool" Value="False"/>
+									</PropertyList>
+								</SearchCriteria>
+							</ChildrenList>
+						</Query>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Queries>
+</WwiseDocument>

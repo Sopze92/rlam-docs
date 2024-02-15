@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A3D2F731-6BF8-40D3-B42E-5A76F6630D5C}" SchemaVersion="94">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{A3D2F731-6BF8-40D3-B42E-5A76F6630D5C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="RLAM_ExampleMap0" ID="{667701CB-2E07-4BDE-A679-F09B82EA188A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_SCLoops" ID="{EE3C9EE5-552C-4001-9634-EEA561622B4C}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_SCLoop_Supersonic" ID="{97FB64A2-2C11-4026-AA9E-3C1FDDBEB322}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_RC_Minigame_Miss" ID="{CA97A4C9-857C-4041-8A95-126BD53F0B7F}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_RC_Minigame_Hit" ID="{2898C163-BD61-420E-BF98-8FE30CFA4BDB}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_music_nonbg_ball" ID="{700866E3-4C73-4240-93BA-A89ABB8D10DD}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_SC_Minigame_ManyMisses" ID="{5D4F0A5D-0388-427A-ACE3-6517E7F3976F}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_RC_Minigame_Touch" ID="{67367EFD-F761-428F-9A90-DE9CC409C656}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_music_nonbg_supersonic" ID="{C2805106-6976-4317-85CC-C86E9B2A165A}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_RC_Minigame_Quit" ID="{C40D26EE-C251-4408-8FCD-460947DAFDA0}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_MPC_GameplayMusic_Background_USER" ID="{32C06783-1C1E-4416-BE49-282A7D05785C}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_RC_Minigame_MissBig" ID="{562C316D-26FA-44E6-AFCB-512F0D9E10AB}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_rain_loop" ID="{389E447D-B635-44E7-B9E4-68A38A33D653}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_SCLoop_DistanceToPlayer" ID="{64486B69-6ED8-45B6-AC1A-59B4E6BC8ACE}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_RC_Thunder_Mid" ID="{7F966091-237B-45CD-B66A-1B51535A580C}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_RC_Thunder_Close" ID="{1164446C-25E4-46A4-9E50-1F42A9E9B930}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_RC_Thunder_Far" ID="{28391CB5-39E0-46E2-8145-B5068CB56E35}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_intro" ID="{8AF6C9AB-931E-47BD-A4D2-855E366BFBBA}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_SC_Minigame_Combo" ID="{E43DF04D-5B7F-4854-8EE2-0E18404935DE}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_introhelp" ID="{4C0EC40B-699F-48E3-AD69-BFEE595F7B5C}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Reset_SC_Minigame" ID="{BA8FF01B-0CBA-490B-BCA4-EA8C31953734}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_minigame" ID="{7DE835D8-45C6-4975-A95A-444FE02C6C6E}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_MPC_GameplayMusic_Background" ID="{450A2BEB-AC55-4A2F-85F7-71FA5BA263D2}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_MPC_GameplayMusic_Background" ID="{9B1DF72B-A655-4D9D-A975-78905E6EB120}" WorkUnitID="{5A968C21-CFEC-4C8E-A521-FAD1633F995C}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

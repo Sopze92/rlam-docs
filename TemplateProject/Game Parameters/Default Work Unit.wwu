@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{87A1264F-B518-46C0-B1F5-78A0DC82B420}" SchemaVersion="94">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{87A1264F-B518-46C0-B1F5-78A0DC82B420}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="hookmusicstarted" ID="{FCD66C29-3D41-40A2-B56B-C3382E0FF347}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="volumestate_movementnotifications" ID="{0A2DC0F0-20EA-47A0-A072-BF31F03D6764}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="IsLocal" ID="{FFE8E684-E6BC-43E8-A276-5D750998174B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="NumOfLocalPlayers" ID="{4098353A-51B1-4525-9A8C-7941C25FAAFE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="4"/>
+						<Property Name="Min" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="XP_BarPercentage" ID="{318AA58C-ABA4-4D1C-8AC5-DE829193F80C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_DX" ID="{E07AD642-91C8-49F8-B6EC-35829E101B86}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.9"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Car_Roll" ID="{12168AA1-DFFE-47CC-B9EE-2796EDEA3B51}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_Crowd" ID="{82C5CD2D-7FD1-4F8E-B849-4F0EF5BE0461}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.98"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_MX" ID="{DCD41A5A-4724-4735-805D-34F012CBA07A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.9"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="IsTeam" ID="{99BB4727-9C49-42E2-BAA9-2A47BE02F0D0}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.3"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
+						<Property Name="InitialValue" Type="Real64" Value="-1"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="garagepreview" ID="{DCB55768-10EF-4A00-B05E-A2A79603C2A5}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="DistanceToPlayer" ID="{B5383381-032A-4182-925E-8733FA0A8065}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="10000"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uhlutyuos" ID="{BCB53A44-D736-46EB-A607-A4738BC1345D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_ueqfcwvcs" ID="{05CE3C0D-6D91-4CD7-A642-87CC097156C8}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_udmmvqnra" ID="{C79F28E4-DD7E-4E71-874F-83872DD56EBE}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+						<Property Name="Min" Type="Real64" Value="-180"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_ujjyxdnfa" ID="{191D28B1-6528-49B8-A83E-D1A6A589CDD0}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="1"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="GameExcitement" ID="{3BBD609A-2708-41AA-A968-5D1649CDD261}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Replay_InCameraView" ID="{08CFCE13-3AE4-4660-B48B-AEF4D2368502}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.3"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.3"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Speed" ID="{5BE80817-C023-4407-AEEE-585219E68CCE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="2300"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Slapback_Length" ID="{DF5A37D3-2573-4EAC-8F1D-76ABFEA268B8}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="1000"/>
+						<Property Name="Max" Type="Real64" Value="10000"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Replay_FocusedCar" ID="{5BF1712C-47D2-47E0-9808-578D979DE016}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.2"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BallIntensity" ID="{626961CC-D2D7-4386-961E-91A51BBCF8D2}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RPM" ID="{A055AB76-A2DA-4130-A297-894175C6D365}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="WheelSpeed" ID="{94BD1977-56A7-4BD7-95BD-1F64E0AA5507}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_ufebeedad" ID="{727AF64E-9649-407C-AF01-44B7100598CF}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BallCamParameterSlowmo" ID="{D1801B4D-C5DF-4142-8708-E4530AFABE14}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Mode_Ghostball_Countdown" ID="{65501077-303D-47A8-9680-658EF3EC3C19}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="REV_Throttle" ID="{2422E3EA-AF87-4444-94D8-BC8A695C791E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="GameUpset" ID="{6475B0D3-44DD-40C5-8772-3F6F038932D1}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="FieldSide" ID="{BA8D8300-9CFF-4335-B649-5D978BB53049}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Altitude" ID="{FDCB6C53-9EB1-4DEB-B3EA-07FF9E98D3DC}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="REV_RPM" ID="{DBEEC35B-84FC-45C2-928A-ED0AF1B81931}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_unfgadljz" ID="{DEE94A8B-1ADC-483F-9C7E-12D7B6DD4F61}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BreakoutStage" ID="{2FA52E26-6911-40C8-9292-9A4C34CC0856}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="2"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="2"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="gameanticipation" ID="{845400D8-0140-4566-822E-C80CD40D9F48}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ImpactIntensity" ID="{7BD1A174-9CDC-49FB-AE3C-C38CE9FC0B68}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="2000"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="HDR_ActiveRange" ID="{95EAA18F-4635-4017-A34E-F381E19B5331}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="-24"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uavvkmrwl" ID="{721B7034-8189-431B-8ACF-A2BCDD2F0C07}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uyegomycn" ID="{BD2C5957-884E-4F41-A46A-CAC8B10A83AD}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BallCurve" ID="{58EB1870-AF04-4DCD-9D50-78A3DAA2310C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Car_Pitch" ID="{4A3D0C94-4DD7-4897-A5FE-6476200DB33D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Ball_Impact_Base" ID="{BB3E2F53-433F-4F30-958A-B9131A5305EE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="-100"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="REV_Throttle_Smooth" ID="{E3E0E6EF-1F72-4D1B-B8B9-8DACBAE2412C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="3"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="3"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uoakkudum" ID="{B60528CB-7F6E-4BFE-9E7F-143B52BE011B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_umkpnmekx" ID="{1D747744-EDB5-4B9E-8BA7-D7F58A6B84DB}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="-100"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="maxreverblight" ID="{6CFECECA-2896-4245-99A2-6574461056F3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="GrappledDistance" ID="{7DF2363D-C0B2-41DA-B66C-56E32DC8F9BA}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uldketfkg" ID="{493E0DBC-597A-4E85-BCA6-B8B823CFBA71}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uefexjxor" ID="{F3272C56-4E46-4D7C-9FBA-74ABC347BF26}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="-36"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="72"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="1000"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uuoyjhxhj" ID="{B2939653-94C3-4032-BF55-79AB79CA4CE1}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_ueppwezai" ID="{8E40CE99-68D6-452F-BF2C-247580295747}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Car_Yaw" ID="{B5F67D21-2DB8-48DC-B370-05D5341E6F5D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="REV_EnableShifting" ID="{4F54D119-F45F-4BA3-AB65-C525469B5A8C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="PodiumSpot" ID="{9825706D-416D-477C-9FB6-64926221386A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ReplayPlaybackSpeed" ID="{6B5132FD-76FC-4313-8A7E-9ECB7490816E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.5"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="NumOfTilesActivated" ID="{19D3AF63-6779-487E-BBB7-B511569F6107}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Throttle_Input" ID="{FC94A890-E610-4050-A047-BE942D4903D4}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RouletteWheelSpeed" ID="{434AA60C-0E14-4DFE-BCE3-B57E8F9CB570}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_umngujxna" ID="{97816E9B-32CE-41AE-A0F8-97BA80B19C86}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="splitscreenposition" ID="{34FBCD66-BE41-4673-9959-7A580C2C95B6}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="GameMode" ID="{F0A548F8-25F1-4471-A1CD-04B9A7385570}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="-100"/>
+						<Property Name="Max" Type="Real64" Value="10000"/>
+						<Property Name="Min" Type="Real64" Value="-10000"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uyagrthgj" ID="{83766B94-80A4-42F8-9CED-891F849679D4}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="WheelsOnGround" ID="{0898EEF3-7AB9-4FA4-874C-3BAD9ABEDFEE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="2"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uihpzqdfm" ID="{75B8873D-0CE6-4AC4-9CC2-5406415A9D02}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="-96"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-96"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uiomyppjy" ID="{68D06EC7-7B1F-4B28-ACF6-A0AA076E30D2}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uggmlvnnb" ID="{4593D06A-0C2F-46E3-A2CB-216BBFA10C25}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="-100"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_Anthems" ID="{BFBCC519-E7BE-4157-8481-1757D3F42B4A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.9"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_Ambient" ID="{60912FC4-6408-408B-A35D-9273E45FCA0E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.9"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="WheelTurnSpeed" ID="{5ACD9647-ECFC-4656-AC66-22183853B728}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="0.1"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="REV_Gear" ID="{D83E7CC0-B654-417C-8C8F-E16013AFA9C2}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_unzotnjgi" ID="{4F9C488A-5887-4EB2-A039-7AA72D8F75E0}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="-96"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uokbinjul" ID="{3E321A6F-15C7-428C-98CB-EEADD3984970}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uoplocyed" ID="{86C7FCFB-20D8-480F-8721-CC7859C96E7D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uxrtyxnxc" ID="{B21EC65B-6239-494C-9E32-89E3CAD071D5}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="altitudemusic" ID="{A30E950B-3FCD-46CF-962E-539833FE3019}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="276"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uzvyxnurb" ID="{636B98EA-8706-4171-BE93-F6D478A18E9D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="-40"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_ufdlrsqte" ID="{2F7A6F2A-BF54-4170-B3AE-46F2ADFB617D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="IsShifting" ID="{7881D2FE-8309-478E-BC35-A3992BAC6493}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="1"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Platform_Rotate_Speed" ID="{6BC9CA0F-CEC9-48D5-B301-F7FACE92CAE8}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="2"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="4"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="GameTension" ID="{60FD72D0-C414-4208-8CD7-0BD87E2A3561}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_ubuqjzvdg" ID="{1C6253CC-E213-4B2A-939B-5530B9EAD69B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uuixwreko" ID="{FD8F2A94-94CD-456F-B338-A8EF9E90572C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BallStrength" ID="{74316E1D-AD01-4377-ACA7-C2771981CC39}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="DynamicRange" ID="{D8242CF0-8453-4C8D-8BF6-B88CF2591D5E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uceyxycgj" ID="{ACDC0616-76DC-48CA-8B39-1B38AA7BBB99}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="-50"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_SFX" ID="{6B62623D-3A8D-4BB0-AC93-42166BD3E8FE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.9"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_Master" ID="{0CD84461-5A07-494C-BEFD-A4DA282B3D03}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.9"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_ujuwtkkaq" ID="{D0A6C19B-FBD6-42CA-B597-C3212F204CE3}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="180"/>
+						<Property Name="Min" Type="Real64" Value="-180"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ghostball_timeingoal" ID="{95B43B92-72E6-4738-9C31-53C831B9FA94}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="FilterTimeDown" Type="Real64" Value="1.3"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.2"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Throttle_Input_Smooth" ID="{F72D8A5F-0C09-435B-947E-6C7E220BD016}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="2.5"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="2.5"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="REV_Velocity" ID="{BCE01D3D-CEAF-48A4-8671-49CC36417CE4}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uyxckccqd" ID="{EAAC0DD0-BCF8-4532-9968-3096EDAB7602}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="XP_TotalGained" ID="{E602DB33-C96E-4DE7-8B09-08D135D6F904}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="0.5"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="RTPCRamping" Type="int16" Value="2"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="WheelSideSpeed" ID="{B76428AE-0BA6-4A93-BB7F-FEFAF923582A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uoqsseuxp" ID="{D28816AE-1E1B-4842-AA4E-F146EE36661E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="2"/>
+						<Property Name="Max" Type="Real64" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_ufbeltnko" ID="{720C8F49-B3C9-4291-BE13-72E296C3ADF8}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="2"/>
+						<Property Name="Max" Type="Real64" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_ubpjnlbdz" ID="{724B13B5-B3A7-4E95-A73C-4C1082D7AADE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="2"/>
+						<Property Name="Max" Type="Real64" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume_Controller" ID="{C8494BD5-790A-45AC-BCFB-1F669523CC12}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0.9"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SpamControl_Boost" ID="{A9035C69-4D93-4B9C-9C13-6A1DD0BD14A2}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="BoostLevel" ID="{7ABD5227-027D-48E7-9238-C2F72B523452}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="-1"/>
+						<Property Name="Min" Type="Real64" Value="-100"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="_uqvtxzxtb" ID="{7C04ED48-77BA-45C7-8668-5F6018A6FAA7}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="WheelsOnGroundss" ID="{BE73E1A2-7F69-4C83-BDED-A880641CE3A6}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{46B1A815-BDA9-480E-BE3A-EB1AC0195B8D}" SchemaVersion="94">
+	<AudioDevices>
+		<WorkUnit Name="Default Work Unit" ID="{46B1A815-BDA9-480E-BE3A-EB1AC0195B8D}" PersistMode="Standalone">
+			<ChildrenList>
+				<AudioDevice Name="System" ID="{D7DFE3D8-1D64-4DD9-8EB7-92F390DE0D53}" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</AudioDevice>
+				<AudioDevice Name="No_Output" ID="{C32267C1-C4E1-4836-ABD1-652FAE92C306}" PluginName="No Output" CompanyID="0" PluginID="181" PluginType="7">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</AudioDevice>
+				<AudioDevice Name="Controller_Speaker" ID="{17A76CD1-1E97-4250-BA3F-C630C93DE508}" PluginName="Controller Speaker" CompanyID="0" PluginID="179" PluginType="7">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</AudioDevice>
+				<AudioDevice Name="Auxiliary" ID="{48DEF905-88F7-4CE9-848A-82BED3479B86}" PluginName="Auxiliary" CompanyID="0" PluginID="180" PluginType="7">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</AudioDevice>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioDevices>
+</WwiseDocument>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1201EFDA-5E49-4578-B66F-3353B99D7EC7}" SchemaVersion="94">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{1201EFDA-5E49-4578-B66F-3353B99D7EC7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="_uemesbhkt____MissingPlugin_PsyMultiBandCompressor" ID="{17D2EF86-7E0D-41F6-BB3E-BB1AF6F3E20A}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<Comment>PsyMultiBandCompressor
+
+Empty</Comment>
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="_uzabsdxur" ID="{6B4126C2-B185-41D6-9905-0A6E33027FD5}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="0.01"/>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="Hold" Type="Real32" Value="0.25"/>
+						<Property Name="Min" Type="Real32" Value="-96"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.7"/>
+					</PropertyList>
+					<PluginData>
+	<GameParameter Name="_uihpzqdfm" ID="{75B8873D-0CE6-4AC4-9CC2-5406415A9D02}"/>
+</PluginData>
+				</Effect>
+				<Effect Name="_unnittbov____MissingPlugin_PsyMultiBandCompressor" ID="{BBE53183-60DB-448A-B786-5EB4FC20E639}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<Comment>PsyMultiBandCompressor
+
+Contents:
+RTPC Volume_SFX, 0x0B
+RTPC Volume_SFX, 0x10
+RTPC Volume_SFX, 0x15
+RTPC Volume_SFX, 0x06
+PluginProperty 0x06, def value 0.0
+PluginProperty 0x0B, def value -24.0
+PluginProperty 0x10, def value 0.0
+PluginProperty 0x15, def value 0.0</Comment>
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="_upofzamek" ID="{4CDCA536-9098-4E2B-8073-C7BA9187F512}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<PluginData>
+	<GameParameter Name="_uyagrthgj" ID="{83766B94-80A4-42F8-9CED-891F849679D4}"/>
+</PluginData>
+				</Effect>
+				<Effect Name="_umkpnmekx" ID="{7CCDA6C5-6B42-41EF-8831-54EC4600AA5F}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="ApplyDownstreamVolume" Type="bool" Value="True"/>
+						<Property Name="AttackTime" Type="Real32" Value="0.1"/>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="Hold" Type="Real32" Value="0.27"/>
+						<Property Name="Min" Type="Real32" Value="-90"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0.6"/>
+					</PropertyList>
+					<PluginData>
+	<GameParameter Name="_umkpnmekx" ID="{1D747744-EDB5-4B9E-8BA7-D7F58A6B84DB}"/>
+</PluginData>
+				</Effect>
+				<Effect Name="_uakqieaec____MissingPlugin_PsyDynamicDelay" ID="{5F335951-F298-4525-B80F-05923374C8EB}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<Comment>PsyDynamicDelay
+
+Contents:
+RTPC Slapback_Length 0x02</Comment>
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="_uyqpqxrbl____MissingPlugin_AkConvolutionReverb" ID="{70D64C0C-3486-4892-A044-CF77C1FD2815}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<Comment>AkConvolutionReverb
+
+Contents:
+media sourceId 368304038</Comment>
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="_unscfpxlz____MissingPlugin_AkConvolutionReverb" ID="{32DAE10F-10EC-44BE-87C3-2B7DBA32D3AC}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<Comment>AkConvolutionReverb
+
+Contents:
+media sourceId 572256504</Comment>
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="Reverb_Arena_Convolution____MissingPlugin_AkConvolutionReverb" ID="{CC0963D4-98F1-4309-A7F8-8B7361B2CD89}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<Comment>AkConvolutionReverb
+
+Contents:
+media sourceId 666975714</Comment>
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="_uwvnigxfa____MissingPlugin_AkConvolutionReverb" ID="{2CFA3B69-5BA9-46BB-A19C-2171762F1462}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<Comment>AkConvolutionReverb
+
+Contents:
+media sourceId 181265548</Comment>
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="_uolkssltj" ID="{B61CC939-99FC-4D7F-A08A-5B2C2CEEDBB2}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="DecayTime" Type="Real32" Value="3.2"/>
+						<Property Name="Density" Type="Real32" Value="58"/>
+						<Property Name="DryLevel" Type="Real32" Value="-96"/>
+						<Property Name="ERLevel" Type="Real32" Value="-6"/>
+						<Property Name="ERPattern" Type="int32" Value="14"/>
+						<Property Name="EnableToneControls" Type="bool" Value="True"/>
+						<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+						<Property Name="Filter1Gain" Type="Real32" Value="-3"/>
+						<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+						<Property Name="Filter3Freq" Type="Real32" Value="4370"/>
+						<Property Name="Filter3Gain" Type="Real32" Value="-5"/>
+						<Property Name="Filter3InsertPos" Type="int32" Value="2"/>
+						<Property Name="HFDamping" Type="Real32" Value="3.45"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="PreDelay" Type="Real32" Value="35"/>
+						<Property Name="Quality" Type="int32" Value="16"/>
+						<Property Name="RearLevel" Type="Real32" Value="-5"/>
+						<Property Name="ReverbLevel" Type="Real32" Value="-15"/>
+						<Property Name="RoomShape" Type="Real32" Value="55"/>
+						<Property Name="RoomSize" Type="Real32" Value="38"/>
+						<Property Name="StereoWidth" Type="Real32" Value="165"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="_uffmjailw____MissingPlugin_AkConvolutionReverb" ID="{1EAFDEF7-AB7D-4F0D-846E-4A31CD8A8B5B}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<Comment>AkConvolutionReverb
+
+Contents:
+media sourceId 659562079</Comment>
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

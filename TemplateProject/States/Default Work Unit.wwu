@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DC51DE48-8EB3-4A02-9E88-3DEC0F073DDD}" SchemaVersion="94">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{DC51DE48-8EB3-4A02-9E88-3DEC0F073DDD}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="AnthemPlaying" ID="{0F910B51-DAB1-451D-84B7-ED837CF1C826}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{35422BDF-9618-443A-B65A-3879834A482B}"/>
+						<State Name="True" ID="{378437E9-7289-47E3-969E-3CACA1B18187}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="False" ID="{364A1D0D-87B3-43A0-93BB-4BB6F230668F}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="True_SFX" ID="{2B417A26-4D82-44A1-AF18-3A8F3BDEF8F9}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{35422BDF-9618-443A-B65A-3879834A482B}"/>
+							<EndState Name="True" ID="{378437E9-7289-47E3-969E-3CACA1B18187}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="True" ID="{378437E9-7289-47E3-969E-3CACA1B18187}"/>
+							<EndState Name="False" ID="{364A1D0D-87B3-43A0-93BB-4BB6F230668F}"/>
+							<Time>1.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{35422BDF-9618-443A-B65A-3879834A482B}"/>
+							<EndState Name="True_SFX" ID="{2B417A26-4D82-44A1-AF18-3A8F3BDEF8F9}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="True_SFX" ID="{2B417A26-4D82-44A1-AF18-3A8F3BDEF8F9}"/>
+							<EndState Name="False" ID="{364A1D0D-87B3-43A0-93BB-4BB6F230668F}"/>
+							<Time>1.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="BreakoutStage" ID="{7B0478AF-E71B-4AEC-83A4-CE48ECF03386}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{71AA0A32-F1A9-4A79-BC1A-12FF38FEB957}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="CameraBallFocus" ID="{6EFF7621-BA98-45DA-BA25-82D9D0ED323A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{60E6BA2E-0A14-4BEF-BD95-93B43ECC91B2}"/>
+						<State Name="On" ID="{E361A5C2-21AB-437C-812C-CEB1BA52F2ED}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="_uxyytkvad" ID="{8C807EBF-33C1-4877-B9FD-4E4B34C022F5}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{5DF9A194-FA27-4DAE-80FA-D782DABF0665}"/>
+						<State Name="_uxxrpudav" ID="{D9DE2E9F-B792-4942-8796-580BE5C3ACEE}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="ControllerSounds" ID="{F7E9F15D-9257-4BC8-9FD7-A7068FCB17A7}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{C1212460-C4F1-4E50-9D96-AC8E04151FAE}"/>
+						<State Name="On" ID="{204361EF-97EA-4734-BDAD-8D38941C8B49}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Off" ID="{3A672519-DC4D-4F59-9A58-7C7F7376F02C}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="DynamicMusicEnabled" ID="{14318E0D-7216-40E7-A049-938858886EFF}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{DEB81990-D44A-4575-B1A3-0E9DC6B30055}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="_uyuyyypan" ID="{731ECBFC-2539-4B66-B458-ECF6F23C6806}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{8434B569-DE34-44D5-BDCA-8AFAE7EBDB9D}"/>
+						<State Name="_urqoguqxt" ID="{D099C32A-85F2-448C-9BCB-389144AA683E}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{8434B569-DE34-44D5-BDCA-8AFAE7EBDB9D}"/>
+							<EndState Name="_urqoguqxt" ID="{D099C32A-85F2-448C-9BCB-389144AA683E}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="GameExcitement" ID="{188A671C-37C3-431A-91AF-2D95310F4FC5}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{438C0944-8D05-4683-BD85-CC51777FD965}"/>
+						<State Name="High" ID="{A89614CC-3849-4BA2-BC11-629A44DE3BBA}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="GameMode" ID="{7D782B88-B703-4258-8785-5A7FFD3E8BC3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{D28AF451-82DA-4CD6-89C2-9D2479C429E8}"/>
+						<State Name="Training" ID="{F6DCC529-0545-4B1F-A85F-144EC6BFB0D0}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="TrainingEditor" ID="{4F004863-4790-4D1F-A134-ED5024483BDC}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="ReplayViewer" ID="{F1D43F5B-EC8F-4866-BCCF-DCE13CCCCE49}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="GameplayMusicEnabled" ID="{1FB15734-656F-405E-9E35-6F729B0A72D2}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{A931BD66-B2BE-474D-A3BA-6B076E9C40BD}"/>
+						<State Name="True" ID="{5009A13B-47AA-4C8C-8486-11EE6A01DD7B}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="GameState" ID="{F2615F11-D999-44EC-999B-31911D3ED6F1}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{3185AE1D-E58A-4EFC-8682-A019C9CB2687}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="GameTension" ID="{3413B39D-6637-4C24-ADB0-01431AB7BD1D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{2ED4C0DD-4CA6-4862-836D-B024A28E4BE2}"/>
+						<State Name="High" ID="{DFC46CF8-8823-49C0-B601-704A1E3FCFF9}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="InUI" ID="{12C41982-A10C-4C42-ABA9-6563EB0FB31B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{6F67343D-B362-4A3B-91E8-24AC1D01BABD}"/>
+						<State Name="WinnerMenu" ID="{E9E4F7B0-02E3-4AE2-BCFA-9D9249C0003D}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="BeginRound" ID="{AB05C46A-FFC2-4F4F-90EA-38EF9D19D7A8}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="PremiumGarage" ID="{4E88957B-CADC-462B-841D-CFCDC1281F44}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="MainMenu" ID="{A0EA3D20-DF24-42D9-A8FD-44F51E356A5D}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="audiopreview" ID="{862DB040-5DB1-4C1A-8697-1AD25D881648}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="21"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Pause" ID="{93A4AB45-B4FE-4F5B-8B40-DF0FE0A7D966}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="LoadingScreen" ID="{3AAB08EA-DCC5-4D0A-B6D3-92B41F636AAD}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="MidGameMenu" ID="{B6468C15-3BDF-4A71-949A-0C71654036ED}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="EndRound" ID="{BF0B2E05-8177-4E49-A7CA-8EA322945877}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="musicpreview" ID="{DD4519C0-C319-4E5A-A596-08C61AD3BC36}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="21"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="ThirdPartyOverlay" ID="{FA10076D-3009-4C13-973C-CD172A4889F7}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="PreMatchLobby" ID="{AAA8A8C7-8901-450F-A97A-E2CF0F062455}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Replay" ID="{7FE290AA-EDEE-4F44-8B61-D8259BFE2240}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Roulette" ID="{7C298D20-AA32-49F8-A25D-9F62B76D74AC}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="WinnerMenu" ID="{E9E4F7B0-02E3-4AE2-BCFA-9D9249C0003D}"/>
+							<EndState Name="None" ID="{6F67343D-B362-4A3B-91E8-24AC1D01BABD}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="WinnerMenu" ID="{E9E4F7B0-02E3-4AE2-BCFA-9D9249C0003D}"/>
+							<EndState Name="BeginRound" ID="{AB05C46A-FFC2-4F4F-90EA-38EF9D19D7A8}"/>
+							<Time>0.3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="PremiumGarage" ID="{4E88957B-CADC-462B-841D-CFCDC1281F44}"/>
+							<EndState Name="MainMenu" ID="{A0EA3D20-DF24-42D9-A8FD-44F51E356A5D}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="PremiumGarage" ID="{4E88957B-CADC-462B-841D-CFCDC1281F44}"/>
+							<EndState Name="audiopreview" ID="{862DB040-5DB1-4C1A-8697-1AD25D881648}"/>
+							<Time>0.4</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Pause" ID="{93A4AB45-B4FE-4F5B-8B40-DF0FE0A7D966}"/>
+							<EndState Name="None" ID="{6F67343D-B362-4A3B-91E8-24AC1D01BABD}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Pause" ID="{93A4AB45-B4FE-4F5B-8B40-DF0FE0A7D966}"/>
+							<EndState Name="LoadingScreen" ID="{3AAB08EA-DCC5-4D0A-B6D3-92B41F636AAD}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{6F67343D-B362-4A3B-91E8-24AC1D01BABD}"/>
+							<EndState Name="audiopreview" ID="{862DB040-5DB1-4C1A-8697-1AD25D881648}"/>
+							<Time>0.4</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="MidGameMenu" ID="{B6468C15-3BDF-4A71-949A-0C71654036ED}"/>
+							<EndState Name="LoadingScreen" ID="{3AAB08EA-DCC5-4D0A-B6D3-92B41F636AAD}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="MainMenu" ID="{A0EA3D20-DF24-42D9-A8FD-44F51E356A5D}"/>
+							<EndState Name="audiopreview" ID="{862DB040-5DB1-4C1A-8697-1AD25D881648}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="MainMenu" ID="{A0EA3D20-DF24-42D9-A8FD-44F51E356A5D}"/>
+							<EndState Name="PremiumGarage" ID="{4E88957B-CADC-462B-841D-CFCDC1281F44}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="LoadingScreen" ID="{3AAB08EA-DCC5-4D0A-B6D3-92B41F636AAD}"/>
+							<EndState Name="MainMenu" ID="{A0EA3D20-DF24-42D9-A8FD-44F51E356A5D}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="LoadingScreen" ID="{3AAB08EA-DCC5-4D0A-B6D3-92B41F636AAD}"/>
+							<EndState Name="None" ID="{6F67343D-B362-4A3B-91E8-24AC1D01BABD}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="LoadingScreen" ID="{3AAB08EA-DCC5-4D0A-B6D3-92B41F636AAD}"/>
+							<EndState Name="BeginRound" ID="{AB05C46A-FFC2-4F4F-90EA-38EF9D19D7A8}"/>
+							<Time>4</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="EndRound" ID="{BF0B2E05-8177-4E49-A7CA-8EA322945877}"/>
+							<EndState Name="None" ID="{6F67343D-B362-4A3B-91E8-24AC1D01BABD}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="audiopreview" ID="{862DB040-5DB1-4C1A-8697-1AD25D881648}"/>
+							<EndState Name="PremiumGarage" ID="{4E88957B-CADC-462B-841D-CFCDC1281F44}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="audiopreview" ID="{862DB040-5DB1-4C1A-8697-1AD25D881648}"/>
+							<EndState Name="None" ID="{6F67343D-B362-4A3B-91E8-24AC1D01BABD}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="WinnerMenu" ID="{E9E4F7B0-02E3-4AE2-BCFA-9D9249C0003D}"/>
+							<EndState Name="EndRound" ID="{BF0B2E05-8177-4E49-A7CA-8EA322945877}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="MainMenu" ID="{A0EA3D20-DF24-42D9-A8FD-44F51E356A5D}"/>
+							<EndState Name="musicpreview" ID="{DD4519C0-C319-4E5A-A596-08C61AD3BC36}"/>
+							<Time>0.3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="musicpreview" ID="{DD4519C0-C319-4E5A-A596-08C61AD3BC36}"/>
+							<EndState Name="MainMenu" ID="{A0EA3D20-DF24-42D9-A8FD-44F51E356A5D}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="IsSupersonic" ID="{904FD413-12CF-4FE6-A2A3-9A90EE19E9A8}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{58E3D0E5-55D1-4A3A-9495-0736093FC758}"/>
+						<State Name="True" ID="{77DE3EDE-7836-4D80-9712-1EEB8E079459}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="LiveReplay" ID="{3D8016B9-D745-4594-9573-A4EA0228386D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{A19F7769-B4A4-47BB-AC09-3647A040E2A4}"/>
+						<State Name="PreScore" ID="{85C7CE2E-75D6-4B25-83CF-3499059B185D}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Slomo" ID="{799039CF-B45F-4EFE-91E4-739EA6EF021C}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="PostGoal" ID="{04AB7889-8FF7-4D5F-BE05-9ACB3C74FA39}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{A19F7769-B4A4-47BB-AC09-3647A040E2A4}"/>
+							<EndState Name="PreScore" ID="{85C7CE2E-75D6-4B25-83CF-3499059B185D}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{A19F7769-B4A4-47BB-AC09-3647A040E2A4}"/>
+							<EndState Name="Slomo" ID="{799039CF-B45F-4EFE-91E4-739EA6EF021C}"/>
+							<Time>1.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Slomo" ID="{799039CF-B45F-4EFE-91E4-739EA6EF021C}"/>
+							<EndState Name="PostGoal" ID="{04AB7889-8FF7-4D5F-BE05-9ACB3C74FA39}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Slomo" ID="{799039CF-B45F-4EFE-91E4-739EA6EF021C}"/>
+							<EndState Name="PreScore" ID="{85C7CE2E-75D6-4B25-83CF-3499059B185D}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="PreScore" ID="{85C7CE2E-75D6-4B25-83CF-3499059B185D}"/>
+							<EndState Name="Slomo" ID="{799039CF-B45F-4EFE-91E4-739EA6EF021C}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="LoadingScreen" ID="{D64968FC-6F43-45F2-8D26-451B543E4B5A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{ABF4C6A2-15A2-45D5-9B60-88FD97B7869B}"/>
+						<State Name="InGameMusicEnabled" ID="{230B92E2-7AE7-4920-8F90-ECE3E15728F0}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="InGameMusicNotEnabled" ID="{73E6117E-C054-4CD7-90A5-2EEBD1FB6F9A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{ABF4C6A2-15A2-45D5-9B60-88FD97B7869B}"/>
+							<EndState Name="InGameMusicEnabled" ID="{230B92E2-7AE7-4920-8F90-ECE3E15728F0}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{ABF4C6A2-15A2-45D5-9B60-88FD97B7869B}"/>
+							<EndState Name="InGameMusicNotEnabled" ID="{73E6117E-C054-4CD7-90A5-2EEBD1FB6F9A}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="InGameMusicNotEnabled" ID="{73E6117E-C054-4CD7-90A5-2EEBD1FB6F9A}"/>
+							<EndState Name="None" ID="{ABF4C6A2-15A2-45D5-9B60-88FD97B7869B}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="_uxaflvxmi" ID="{1C327316-B261-49EB-AE60-BF507361E477}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{F0385147-B731-4303-91A0-B4D9A9D9745D}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="pcproduct_sound" ID="{F6E758C3-247B-4885-8102-19A69BAFFB11}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{D9FC850C-42AD-41CE-ACFE-705FA6AEEBDB}"/>
+						<State Name="True" ID="{F4FC8D69-37C1-4D59-9FF0-16D672B07FCD}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="_uosujjhod" ID="{09CAE8EB-5BD8-4D7C-8931-A7ED8ABDE195}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{064DD360-A9B2-4B2A-B6D7-FFCD1F74E0AB}"/>
+						<State Name="Tutorial_Intro" ID="{533F8DFE-B64B-4FB7-8FD0-41AF8DF544CD}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Tutorial_Boost" ID="{44C1DAAB-D3F6-4CFF-9F38-1A6294A09862}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Tutorial_BallCam" ID="{B1ABD71F-314D-4564-9033-ABEFB2BCEEBF}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="_ujcuktvpa" ID="{B918919A-48CF-4FC2-8D23-E5B484BF8D1F}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{064DD360-A9B2-4B2A-B6D7-FFCD1F74E0AB}"/>
+							<EndState Name="Tutorial_Intro" ID="{533F8DFE-B64B-4FB7-8FD0-41AF8DF544CD}"/>
+							<Time>0.1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Tutorial_Intro" ID="{533F8DFE-B64B-4FB7-8FD0-41AF8DF544CD}"/>
+							<EndState Name="None" ID="{064DD360-A9B2-4B2A-B6D7-FFCD1F74E0AB}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="_ueuekmjbz" ID="{71CA5065-F377-4E38-AAF8-85B2CE196537}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.3"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{18BC05D7-579D-4D0A-85DF-B699B00A8A15}"/>
+						<State Name="Cinematic" ID="{EC44BE65-7CAE-48DD-B094-64753F2DCA17}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="PlayerControl" ID="{294F7836-A042-44CD-98AA-833768953D82}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Cinematic" ID="{EC44BE65-7CAE-48DD-B094-64753F2DCA17}"/>
+							<EndState Name="None" ID="{18BC05D7-579D-4D0A-85DF-B699B00A8A15}"/>
+							<Time>2.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="NumOfLocalPlayers" ID="{D4996B59-0347-47D7-8A51-3D86B32EBA66}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{2A13CEBC-40B2-4AAF-9648-9F1F5C7D7410}"/>
+						<State Name="_02" ID="{E70C387B-B624-421E-A1BD-65A44EDC7BEB}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="_03" ID="{03B791F6-0694-4C82-A7FA-5FD18BC281EA}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="_04" ID="{331C05CF-1E58-4B76-BFCE-F62F85DDF72E}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Platform" ID="{8B2A7C6E-C841-4497-AE76-E24AE3E27517}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{8B17CBE0-847D-4399-9973-A559CB85C0A3}"/>
+						<State Name="PC" ID="{E5889B72-9BBE-404C-B980-EB053CA7C01C}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="PS4" ID="{98E099F8-AEAD-4FCF-961E-B8E87D4D7AB1}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Headphones" ID="{B2419578-C789-43E9-92B4-870CBD5CB146}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="_uruidcymz" ID="{BC05776B-6EA4-4137-92D0-3AFBB3125A41}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{A153D191-C4E1-4030-98C7-BE0016916C51}"/>
+						<State Name="True" ID="{84C26F38-E7EC-4412-93A9-D10BAB40B8BE}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{A153D191-C4E1-4030-98C7-BE0016916C51}"/>
+							<EndState Name="True" ID="{84C26F38-E7EC-4412-93A9-D10BAB40B8BE}"/>
+							<Time>0.4</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="True" ID="{84C26F38-E7EC-4412-93A9-D10BAB40B8BE}"/>
+							<EndState Name="None" ID="{A153D191-C4E1-4030-98C7-BE0016916C51}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="playercount" ID="{68D8C271-36F9-477A-8831-56A50B5CD106}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{3958FCB9-5E9A-4B00-BF71-77959690EADA}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="ReplayPlaybackSpeed" ID="{684A9B42-A514-4993-8557-9FE4B845C383}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{2FEE7314-7F2E-448D-A878-ABFEB9900C61}"/>
+						<State Name="P_100" ID="{ED73E5A1-5329-4D02-A2BB-FB2801D84328}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="P_200" ID="{94C57527-7A5D-4C34-9EEC-7E2E86E58DF7}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="P_050" ID="{F388C579-FAE9-491D-A45B-272716738FA6}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="P_025" ID="{3D0A418A-85B7-445F-BB3A-D23584F8CBBA}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="P_010" ID="{934A376F-DF2F-4108-879E-05D0D8C3C01E}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="P_005" ID="{511E8E50-3525-465D-9D3D-0B982FF2A585}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="P_100" ID="{ED73E5A1-5329-4D02-A2BB-FB2801D84328}"/>
+							<EndState Name="P_200" ID="{94C57527-7A5D-4C34-9EEC-7E2E86E58DF7}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_100" ID="{ED73E5A1-5329-4D02-A2BB-FB2801D84328}"/>
+							<EndState Name="P_050" ID="{F388C579-FAE9-491D-A45B-272716738FA6}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_100" ID="{ED73E5A1-5329-4D02-A2BB-FB2801D84328}"/>
+							<EndState Name="P_025" ID="{3D0A418A-85B7-445F-BB3A-D23584F8CBBA}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_100" ID="{ED73E5A1-5329-4D02-A2BB-FB2801D84328}"/>
+							<EndState Name="P_010" ID="{934A376F-DF2F-4108-879E-05D0D8C3C01E}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_100" ID="{ED73E5A1-5329-4D02-A2BB-FB2801D84328}"/>
+							<EndState Name="P_005" ID="{511E8E50-3525-465D-9D3D-0B982FF2A585}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_050" ID="{F388C579-FAE9-491D-A45B-272716738FA6}"/>
+							<EndState Name="P_200" ID="{94C57527-7A5D-4C34-9EEC-7E2E86E58DF7}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_050" ID="{F388C579-FAE9-491D-A45B-272716738FA6}"/>
+							<EndState Name="P_025" ID="{3D0A418A-85B7-445F-BB3A-D23584F8CBBA}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_010" ID="{934A376F-DF2F-4108-879E-05D0D8C3C01E}"/>
+							<EndState Name="P_050" ID="{F388C579-FAE9-491D-A45B-272716738FA6}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_050" ID="{F388C579-FAE9-491D-A45B-272716738FA6}"/>
+							<EndState Name="P_005" ID="{511E8E50-3525-465D-9D3D-0B982FF2A585}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_025" ID="{3D0A418A-85B7-445F-BB3A-D23584F8CBBA}"/>
+							<EndState Name="P_200" ID="{94C57527-7A5D-4C34-9EEC-7E2E86E58DF7}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_025" ID="{3D0A418A-85B7-445F-BB3A-D23584F8CBBA}"/>
+							<EndState Name="P_010" ID="{934A376F-DF2F-4108-879E-05D0D8C3C01E}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_025" ID="{3D0A418A-85B7-445F-BB3A-D23584F8CBBA}"/>
+							<EndState Name="P_005" ID="{511E8E50-3525-465D-9D3D-0B982FF2A585}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_010" ID="{934A376F-DF2F-4108-879E-05D0D8C3C01E}"/>
+							<EndState Name="P_200" ID="{94C57527-7A5D-4C34-9EEC-7E2E86E58DF7}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_010" ID="{934A376F-DF2F-4108-879E-05D0D8C3C01E}"/>
+							<EndState Name="P_005" ID="{511E8E50-3525-465D-9D3D-0B982FF2A585}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="P_005" ID="{511E8E50-3525-465D-9D3D-0B982FF2A585}"/>
+							<EndState Name="P_200" ID="{94C57527-7A5D-4C34-9EEC-7E2E86E58DF7}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="ScoreSeparation" ID="{B0032EC1-272F-4769-B0BD-EF1479C886FF}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{06E5A2D5-F9ED-429C-98BB-2B18937C75C8}"/>
+						<State Name="High" ID="{DFE69890-4CBA-4453-9DBB-F07D35B88BFB}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Med" ID="{F5EC6037-F55E-4148-8F6B-791ECF126883}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="scorestatus" ID="{85A2E834-D474-4162-BB2D-B68A7F48BA3C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{00ECF22A-608F-40AC-BDD5-0028BC9F1D9D}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="ldrdisablepausing" ID="{808E0C15-9456-48D3-9E1E-400C1BE3F418}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="21"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{1843AC57-FAF2-4B5B-991F-2AF822818195}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="SpectatorCameraMode" ID="{44728AF2-7B0D-4E3D-90BD-D652958E7400}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{F7ACADE1-C800-4F8E-A97E-E4D3E1B6B17C}"/>
+						<State Name="Fly" ID="{B974AA2F-DF7B-4417-86CC-B85BE0A83002}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="Director_Countdown" ID="{5598ED66-D883-45C7-A684-D8052BF4D0E0}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="TrackMode_FX" ID="{B132F6C2-801D-4AD3-B742-79D25905EC13}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{27849D4B-E4D8-4795-BFDF-7F937C39D3D1}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Trackmode_TimeStop" ID="{0A2E5957-3BC5-4D3D-B9B2-8DFEF54CA27B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{C207F167-AF4B-436B-ACD0-773589064BEA}"/>
+						<State Name="False" ID="{FA2CF662-6BA0-433C-975A-BB923B4F13B8}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+						<State Name="True" ID="{10918C84-530A-4BE5-BBAF-4A6AF9260AFC}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="False" ID="{FA2CF662-6BA0-433C-975A-BB923B4F13B8}"/>
+							<EndState Name="True" ID="{10918C84-530A-4BE5-BBAF-4A6AF9260AFC}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="True" ID="{10918C84-530A-4BE5-BBAF-4A6AF9260AFC}"/>
+							<EndState Name="False" ID="{FA2CF662-6BA0-433C-975A-BB923B4F13B8}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{C207F167-AF4B-436B-ACD0-773589064BEA}"/>
+							<EndState Name="True" ID="{10918C84-530A-4BE5-BBAF-4A6AF9260AFC}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="TutorialState" ID="{C6CA6FEC-3040-4A49-B324-2F6F007E333E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{5A691A23-6D04-44FB-B528-BB37A98A9344}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="VoiceChatActive" ID="{60738F75-9E83-4B52-952A-12A0478A09C5}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{BF584769-76AA-4130-BD68-3618038EC048}"/>
+						<State Name="True" ID="{57C73D7B-7301-49D0-9F98-9F88975D5F64}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</State>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{BF584769-76AA-4130-BD68-3618038EC048}"/>
+							<EndState Name="True" ID="{57C73D7B-7301-49D0-9F98-9F88975D5F64}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="True" ID="{57C73D7B-7301-49D0-9F98-9F88975D5F64}"/>
+							<EndState Name="None" ID="{BF584769-76AA-4130-BD68-3618038EC048}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="BallExplode" ID="{A17A3E46-4DB4-4E55-8799-BF376790787C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{A628E8B7-A8BA-4D64-B3C9-C57FE0CBD908}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

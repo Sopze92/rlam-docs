@@ -1,0 +1,2351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BCBAAEFE-0051-4B94-8297-43A8F0895668}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{BCBAAEFE-0051-4B94-8297-43A8F0895668}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Mono" ID="{EE6D7E4C-5A4A-4B8C-BF6D-F6CE9BD4D7DA}" ShortID="918141037">
+					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="AM_GameplayMusic_OnlySupersonic" ID="{4F06A3C2-BE76-4461-9518-3F5B08804D50}" ShortID="540149922">
+							<PropertyList>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{2795791A-E216-433F-A24C-F49B081EE0F6}" ShortID="1062332094">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Volume_Anthems" ID="{BFBCC519-E7BE-4157-8481-1757D3F42B4A}" WorkUnitID="{87A1264F-B518-46C0-B1F5-78A0DC82B420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{0ECE7D63-1BB0-477A-A284-B8B4EA132EF1}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-96</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="SCLoop_Supersonic" ID="{ABAEBF3A-F76A-4996-AE0F-ADEF6C15399E}" ShortID="190736438">
+									<Comment>Plays SARPBC in a loop while player is at supersonic speed</Comment>
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SARPBC_theme_loop" ID="{03A0A45E-B300-4405-83FE-0DF1F947176A}" ShortID="1000745504">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SARPBC_theme_loop" ID="{ABDA0DA1-38E1-4FFD-BC99-F872744B079E}" ShortID="626274325">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SARPBC_theme_loop.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SARPBC_theme_loop" ID="{ABDA0DA1-38E1-4FFD-BC99-F872744B079E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="IsSupersonic" ID="{904FD413-12CF-4FE6-A2A3-9A90EE19E9A8}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="True" ID="{77DE3EDE-7836-4D80-9712-1EEB8E079459}"/>
+										<CustomState Name="" ID="{5E128A4A-3517-4D8F-B7FE-7FA75BFB7947}" ShortID="381557679">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="96"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</ActorMixer>
+						<ActorMixer Name="AM_GameplayMusic_BallDistance" ID="{14E664DE-9FDF-4EB5-8CF5-F95ACDAE29C9}" ShortID="339374336">
+							<PropertyList>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{E8353493-42D3-4E24-8260-E93F53E2628F}" ShortID="663525774">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="DistanceToPlayer" ID="{B5383381-032A-4182-925E-8733FA0A8065}" WorkUnitID="{87A1264F-B518-46C0-B1F5-78A0DC82B420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{AF1EB02F-0797-4B93-A113-D8671B73875D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2520.9205</XPos>
+														<YPos>-1.02198</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>5355.64854</XPos>
+														<YPos>-17.31531</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>10000</XPos>
+														<YPos>-192</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+										<RTPC Name="" ID="{0079D1F6-52C6-4188-BAD7-4B365B56B76E}" ShortID="54128133">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Volume_Anthems" ID="{BFBCC519-E7BE-4157-8481-1757D3F42B4A}" WorkUnitID="{87A1264F-B518-46C0-B1F5-78A0DC82B420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{4A699294-446B-45FF-94BA-A722E96D716F}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-96</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="_ushkbziip" ID="{DE7145D2-C086-46CC-8098-05B6FA017097}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="SCLoop_DistanceToPlayer" ID="{BA137381-825B-4680-8FCE-AB966A1C8A69}" ShortID="151779076">
+									<Comment>Plays SARPBC in a loop while player is at supersonic speed</Comment>
+									<PropertyList>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SARPBC_theme_loop" ID="{54B5F255-436D-4BA6-8CF7-44A80C8AE90B}" ShortID="534406662">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SARPBC_theme_loop" ID="{0C1D5E31-2509-4139-A1AC-E46BD8B4B9C9}" ShortID="187195977">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SARPBC_theme_loop.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="626274325"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SARPBC_theme_loop" ID="{0C1D5E31-2509-4139-A1AC-E46BD8B4B9C9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="AM_Gameplay_NoReplay" ID="{6FA8E3AC-5B9D-4C35-9DAA-D2D3013401F7}" ShortID="62160331">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{D2581E6E-822B-4AFB-B0EC-F3FC5E7185D7}" ShortID="411186809">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Volume_SFX" ID="{6B62623D-3A8D-4BB0-AC93-42166BD3E8FE}" WorkUnitID="{87A1264F-B518-46C0-B1F5-78A0DC82B420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{D3E985F2-03F2-4E9D-9D63-EEDE8F157312}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-96</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0.47385</XPos>
+														<YPos>4.58723</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>20</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OutputBusVolume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="intro" ID="{5731CCC6-9A82-4E10-AAB6-E4FEAB4835B3}" ShortID="142011997">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="intro" ID="{3B4F17E3-0091-4760-8530-856AB5C5B56C}" ShortID="538212292">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>intro.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="intro" ID="{3B4F17E3-0091-4760-8530-856AB5C5B56C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="introhelp" ID="{07A4A291-D46C-46BE-9DDA-0C5F016EDF9F}" ShortID="738257948">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="introhelp" ID="{C680BDAB-26F6-480C-B46D-7B3701A90ED6}" ShortID="1051049212">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>introhelp.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="introhelp" ID="{C680BDAB-26F6-480C-B46D-7B3701A90ED6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="minigame" ID="{5801F9F1-E47F-4CD1-85B5-3684FFDE1560}" ShortID="568599052">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="minigame" ID="{3B3AFFF8-88D2-464B-85A1-887A9C79FD24}" ShortID="839360804">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>minigame.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="minigame" ID="{3B3AFFF8-88D2-464B-85A1-887A9C79FD24}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="music_bg_off" ID="{DCB9E01D-F056-49C1-A94D-7EE127A03D4F}" ShortID="928722006">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="music_bg_off" ID="{424E58A4-A0B4-46CC-BD33-F9DD257995B5}" ShortID="956321977">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>music_bg_off.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="music_bg_off" ID="{424E58A4-A0B4-46CC-BD33-F9DD257995B5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="music_bg_on" ID="{834C9003-30C2-4EC6-8560-F70CF4B93DF3}" ShortID="850929553">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="music_bg_on" ID="{7AA13514-CFBB-4837-A6B9-8BC64E914F0D}" ShortID="108269748">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>music_bg_on.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="music_bg_on" ID="{7AA13514-CFBB-4837-A6B9-8BC64E914F0D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="music_nonbg_ball" ID="{12170BEE-225F-4356-B151-7FD397930582}" ShortID="45515162">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="music_nonbg_ball" ID="{076A28BE-A2EC-45D5-8D37-04E5A7E22F0F}" ShortID="339049700">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>music_nonbg_ball.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="music_nonbg_ball" ID="{076A28BE-A2EC-45D5-8D37-04E5A7E22F0F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="music_nonbg_off" ID="{B2B92959-4AB2-42AD-BF74-0E89C2A7CE1A}" ShortID="959333239">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="music_nonbg_off" ID="{58D02650-BD2C-4ADC-BCD8-14B5FF735337}" ShortID="114888333">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>music_nonbg_off.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="music_nonbg_off" ID="{58D02650-BD2C-4ADC-BCD8-14B5FF735337}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="music_nonbg_supersonic" ID="{CF046922-6B6F-46BC-B9FA-13A610E76302}" ShortID="652737454">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="music_nonbg_supersonic" ID="{023BFDA0-B6ED-4B9C-A567-CB1FC23E9F49}" ShortID="961944611">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>music_nonbg_supersonic.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="music_nonbg_supersonic" ID="{023BFDA0-B6ED-4B9C-A567-CB1FC23E9F49}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="SC_Minigame_ManyMisses" ID="{D81486B5-C2C2-4668-A026-1BDD3DF2C9E9}" ShortID="435892838">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom CreatedFrom="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}">
+												<Conversion Name="Vorbis Quality Low (Custom)" ID="{82B1D51D-01D0-4053-A708-D8092FF1C3D0}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Color" Type="int16" Value="19"/>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">36000</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{3BE23265-5792-4DE3-9ED6-D51C42A0800A}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+																<PropertyList>
+																	<Property Name="QualityFactor" Type="Real32" Value="0"/>
+																</PropertyList>
+															</ConversionPlugin>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="manymisses0" ID="{6E4024D6-5C01-437D-B6F6-647CC970F248}" ShortID="394052320">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="manymisses0" ID="{7D0F75D7-8862-4EFB-A38A-0890F8143FF0}" ShortID="571121194">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>manymisses0.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="manymisses0" ID="{7D0F75D7-8862-4EFB-A38A-0890F8143FF0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="manymisses1" ID="{7FAD7CDD-7EA3-4AB1-84DE-71570C587E6E}" ShortID="495307408">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="manymisses1" ID="{40B28D17-2A96-4709-BE4A-DF042F74362D}" ShortID="955792442">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>manymisses1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="manymisses1" ID="{40B28D17-2A96-4709-BE4A-DF042F74362D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="manymisses2" ID="{0AFDCFE7-D144-4510-8518-7A2FC45F3BE0}" ShortID="23219425">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="manymisses2" ID="{FB0B8020-8448-4345-BAB7-DCA07C78C095}" ShortID="117723612">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>manymisses2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="manymisses2" ID="{FB0B8020-8448-4345-BAB7-DCA07C78C095}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="manymisses3" ID="{EDB342CA-9A33-4667-83B8-D9AC2DF97414}" ShortID="883502790">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="manymisses3" ID="{28D78F96-3C32-4F36-9CB3-498ED5854D3D}" ShortID="390718351">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>manymisses3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="manymisses3" ID="{28D78F96-3C32-4F36-9CB3-498ED5854D3D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="easymode" ID="{245D7A59-DD7A-451E-A566-1A01AA8269B0}" ShortID="271714130">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="easymode" ID="{6227A213-CDF1-497A-8DAC-65D1345F2C65}" ShortID="1005707616">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>easymode.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="easymode" ID="{6227A213-CDF1-497A-8DAC-65D1345F2C65}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RC_Minigame_Touch" ID="{F0230A38-A787-48FA-8F63-F86EA4C12D92}" ShortID="196070532">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom CreatedFrom="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}">
+												<Conversion Name="Vorbis Quality Low (Custom)" ID="{E8069E28-3CA6-4836-A254-DDBB12FC6367}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Color" Type="int16" Value="19"/>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">36000</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{B39FC78E-984F-4680-9FC2-35540599C32D}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+																<PropertyList>
+																	<Property Name="QualityFactor" Type="Real32" Value="0"/>
+																</PropertyList>
+															</ConversionPlugin>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="touch0" ID="{72B4280F-7841-41A3-9F34-662D4CED52FF}" ShortID="597360277">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="touch0" ID="{C84B832B-67DF-4A40-BBD0-077D688A299D}" ShortID="246076900">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>touch0.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="touch0" ID="{C84B832B-67DF-4A40-BBD0-077D688A299D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="touch1" ID="{83A8F275-6494-435A-A486-15E923F89AA7}" ShortID="735764624">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="touch1" ID="{F45C1F07-DA55-4A64-B3B6-61CCB590EF28}" ShortID="664067424">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>touch1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="touch1" ID="{F45C1F07-DA55-4A64-B3B6-61CCB590EF28}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="touch2" ID="{124DBE46-424C-4F44-91AF-22680F419B22}" ShortID="602895022">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="touch2" ID="{FC18254B-7A3F-4441-93BE-C59471DD4D13}" ShortID="299719220">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>touch2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="touch2" ID="{FC18254B-7A3F-4441-93BE-C59471DD4D13}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="touch3" ID="{72D796B8-8863-4D26-B671-1152D4BED59E}" ShortID="942083507">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="touch3" ID="{2A548544-183C-4728-BF00-2E121B5FE1E4}" ShortID="67469363">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>touch3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="touch3" ID="{2A548544-183C-4728-BF00-2E121B5FE1E4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SC_Minigame_Combo" ID="{23C9AAC2-1B0D-403E-B6ED-8F38C6D83F13}" ShortID="483557943">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom CreatedFrom="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}">
+												<Conversion Name="Vorbis Quality Low (Custom)" ID="{B12351F7-0A92-4055-B324-F856DA763929}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Color" Type="int16" Value="19"/>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">36000</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{EF75B7D2-5B23-43A4-9C8F-81B1145A9CA7}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+																<PropertyList>
+																	<Property Name="QualityFactor" Type="Real32" Value="0"/>
+																</PropertyList>
+															</ConversionPlugin>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="combo3" ID="{AE547B56-C5BA-4C67-94AF-AFE52C90D4E9}" ShortID="812059541">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="combo3" ID="{9FD4E59E-D70E-4F2D-9BF5-84AA3E7EB321}" ShortID="187135060">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>combo3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="combo3" ID="{9FD4E59E-D70E-4F2D-9BF5-84AA3E7EB321}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="combo6" ID="{2DBFF917-F004-4DDD-A94D-D6F0B13EA907}" ShortID="550363431">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="combo6" ID="{009C1371-C554-44B6-BB2F-C404E43F63A5}" ShortID="561042353">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>combo6.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="combo6" ID="{009C1371-C554-44B6-BB2F-C404E43F63A5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="combo8" ID="{3C190EAE-32F6-4FEF-BBB9-A62FBD488B81}" ShortID="596617536">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="combo8" ID="{2A00804A-9DB7-4705-9590-8966AE8BB329}" ShortID="996064617">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>combo8.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="combo8" ID="{2A00804A-9DB7-4705-9590-8966AE8BB329}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="combo10" ID="{83437F7C-988E-40DD-A740-89AE5B344600}" ShortID="380192942">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="combo10" ID="{020649F9-ADA3-484E-8BD2-A2F7801FDD4D}" ShortID="925560076">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>combo10.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="combo10" ID="{020649F9-ADA3-484E-8BD2-A2F7801FDD4D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RC_Minigame_Quit" ID="{BDFB08B9-B1F2-442A-9D6F-D5BFCB2EA93D}" ShortID="665684694">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom CreatedFrom="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}">
+												<Conversion Name="Vorbis Quality Low (Custom)" ID="{D9C3F301-368A-436A-A897-D331000352FF}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Color" Type="int16" Value="19"/>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">36000</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{309E4102-FB4B-44FB-B24D-827266C31BB0}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+																<PropertyList>
+																	<Property Name="QualityFactor" Type="Real32" Value="0"/>
+																</PropertyList>
+															</ConversionPlugin>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="quit0" ID="{2DD6ACBD-E587-41DE-8E64-CE93DC85FE09}" ShortID="888131719">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="quit0" ID="{E5F979BE-7F88-4828-9E80-4AD7F8BE41DE}" ShortID="3210776">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>quit0.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="quit0" ID="{E5F979BE-7F88-4828-9E80-4AD7F8BE41DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="quit1" ID="{286FDA13-7A81-42A8-AB00-952DA322334A}" ShortID="949115732">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="quit1" ID="{B4C69CC2-6290-4375-B605-FCCE1F069EFC}" ShortID="324808913">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>quit1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="quit1" ID="{B4C69CC2-6290-4375-B605-FCCE1F069EFC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="quit2" ID="{B20A6AD8-7B44-42F3-B470-4E2BC9D7241E}" ShortID="650293785">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="quit2" ID="{76EEC64E-A119-4584-8E06-BF3B0A09CE7F}" ShortID="977818241">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>quit2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="quit2" ID="{76EEC64E-A119-4584-8E06-BF3B0A09CE7F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="quit3" ID="{61F6F0A0-8DA9-4F3E-9D01-F9EEA8A2396C}" ShortID="346892102">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="quit3" ID="{811DED7A-DAAF-492F-A1C7-44CDEF627E6C}" ShortID="568679459">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>quit3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="quit3" ID="{811DED7A-DAAF-492F-A1C7-44CDEF627E6C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RC_Minigame_MissBig" ID="{34CE12B9-4ADA-4D1E-A43B-5FFB55A37268}" ShortID="718530458">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom CreatedFrom="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}">
+												<Conversion Name="Vorbis Quality Low (Custom)" ID="{FF14F4CB-B96B-4DC3-94C9-4B2415C756A8}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Color" Type="int16" Value="19"/>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">36000</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{38A31515-F5A4-45A8-9AD0-DF700F32F5EC}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+																<PropertyList>
+																	<Property Name="QualityFactor" Type="Real32" Value="0"/>
+																</PropertyList>
+															</ConversionPlugin>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="missbig1" ID="{6DFBA8A8-7CE9-486C-B01C-44FE57CFD136}" ShortID="254165922">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="missbig1" ID="{D71E3F58-5445-497A-BA14-59CDDBF88784}" ShortID="8143036">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>missbig1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="missbig1" ID="{D71E3F58-5445-497A-BA14-59CDDBF88784}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="missbig0" ID="{BCD18F57-CCD0-4BEC-B34E-063DD867D57C}" ShortID="131230264">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="missbig0" ID="{93C8D213-0139-4F2B-A5EB-433041A08313}" ShortID="832916247">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>missbig0.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="missbig0" ID="{93C8D213-0139-4F2B-A5EB-433041A08313}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="missbig2" ID="{430B0A78-C632-4AE3-834D-69246A58CDAD}" ShortID="939273414">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="missbig2" ID="{2AB1339F-1676-4921-BF53-405100FC21E3}" ShortID="65319825">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>missbig2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="missbig2" ID="{2AB1339F-1676-4921-BF53-405100FC21E3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="missbig3" ID="{C141E903-BA96-47CB-815E-02BC5BD25105}" ShortID="217450002">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="missbig3" ID="{EA7E5326-B3E4-4ABD-89B9-209917AE8001}" ShortID="375831548">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>missbig3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="missbig3" ID="{EA7E5326-B3E4-4ABD-89B9-209917AE8001}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RC_Minigame_Hit" ID="{592B9D3D-55DF-4D6A-A7A8-0E10423EF7B5}" ShortID="798993988">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom CreatedFrom="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}">
+												<Conversion Name="Vorbis Quality Low (Custom)" ID="{1DD89026-EC35-4765-B820-2B790D94C85F}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Color" Type="int16" Value="19"/>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">36000</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{CB2B0138-BD5C-4742-9379-6389F323EF2C}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+																<PropertyList>
+																	<Property Name="QualityFactor" Type="Real32" Value="0"/>
+																</PropertyList>
+															</ConversionPlugin>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="hit0" ID="{2B98D465-F7BC-442E-A235-F07063DC40DB}" ShortID="716840845">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="hit0" ID="{E17D4A22-F9BF-425B-8956-8FE0308CD524}" ShortID="465446412">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>hit0.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="hit0" ID="{E17D4A22-F9BF-425B-8956-8FE0308CD524}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="hit1" ID="{557BA02A-5179-4183-963E-121D3CEADECD}" ShortID="1007218528">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="hit1" ID="{9FFBA0CF-ADE8-4288-8812-28AE3C5C0B71}" ShortID="562627951">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>hit1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="hit1" ID="{9FFBA0CF-ADE8-4288-8812-28AE3C5C0B71}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="hit2" ID="{9B95C40A-C028-4BA9-B7DC-17D9092E42AE}" ShortID="735296772">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="hit2" ID="{EE89F3E2-E541-443F-B975-424449EFE001}" ShortID="151105383">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>hit2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="hit2" ID="{EE89F3E2-E541-443F-B975-424449EFE001}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="hit3" ID="{75F296CD-0F97-4884-B8F6-B98B228CDEF4}" ShortID="693036457">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="hit3" ID="{F1F4C833-FC5D-4424-B93D-BA28C1012105}" ShortID="699641810">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>hit3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="hit3" ID="{F1F4C833-FC5D-4424-B93D-BA28C1012105}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RC_Minigame_Miss" ID="{164EA825-C483-4C00-B74B-3A82356A8B40}" ShortID="1066871598">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom CreatedFrom="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}">
+												<Conversion Name="Vorbis Quality Low (Custom)" ID="{A7CA8A4B-F907-46BB-9D0D-43E90B68D2FA}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Color" Type="int16" Value="19"/>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">36000</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{3CDCBB04-126B-41B2-9240-BE129FFF5639}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+																<PropertyList>
+																	<Property Name="QualityFactor" Type="Real32" Value="0"/>
+																</PropertyList>
+															</ConversionPlugin>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HDR" ID="{681E446C-3491-49A2-AD72-562DEEE2BC00}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="miss0" ID="{2CCEBC14-C7F6-4B45-8A82-4C4EA8B54071}" ShortID="580784140">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="miss0" ID="{BA8E2089-4D08-4F3C-8B6F-11E5E35C1804}" ShortID="822144043">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>miss0.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="miss0" ID="{BA8E2089-4D08-4F3C-8B6F-11E5E35C1804}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="miss1" ID="{95C7F4CE-A977-4FA1-A331-2BDC9E1CAD66}" ShortID="755113725">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="miss1" ID="{F8D88EC3-FA06-49F6-A752-ECC3F889B754}" ShortID="684599507">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>miss1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="miss1" ID="{F8D88EC3-FA06-49F6-A752-ECC3F889B754}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="miss2" ID="{C8A9895E-102C-4190-935A-A4BD616B7EBC}" ShortID="584078449">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="miss2" ID="{F19EACF2-4D7A-4F2F-B83C-ECD98C112D3D}" ShortID="196082001">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>miss2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="miss2" ID="{F19EACF2-4D7A-4F2F-B83C-ECD98C112D3D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="miss3" ID="{52B177F9-64FA-42D1-8435-6EF14DA8F43D}" ShortID="501884887">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="miss3" ID="{9C6D3F0F-6FEA-4336-9B15-D81DAD116B64}" ShortID="455464048">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>miss3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="miss3" ID="{9C6D3F0F-6FEA-4336-9B15-D81DAD116B64}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="InUI" ID="{12C41982-A10C-4C42-ABA9-6563EB0FB31B}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="MainMenu" ID="{A0EA3D20-DF24-42D9-A8FD-44F51E356A5D}"/>
+										<CustomState Name="" ID="{EBE7E7A6-7F75-4BC6-A2D8-9B13E33239C8}" ShortID="723368913">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="PreMatchLobby" ID="{AAA8A8C7-8901-450F-A97A-E2CF0F062455}"/>
+										<CustomState Name="" ID="{AEEC0238-A781-421A-8A61-AF4CEFE6B446}" ShortID="980626333"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="PremiumGarage" ID="{4E88957B-CADC-462B-841D-CFCDC1281F44}"/>
+										<CustomState Name="" ID="{1A07D6CC-9653-4D35-952A-E9780DCB9811}" ShortID="665989935"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Roulette" ID="{7C298D20-AA32-49F8-A25D-9F62B76D74AC}"/>
+										<CustomState Name="" ID="{FF7E829A-7D1B-4905-8C8F-7A7823E51E62}" ShortID="952104952">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MidGameMenu" ID="{B6468C15-3BDF-4A71-949A-0C71654036ED}"/>
+										<CustomState Name="" ID="{B9A83C42-46B5-461C-9C0D-BCA266B017A5}" ShortID="252211905">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="34"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="WinnerMenu" ID="{E9E4F7B0-02E3-4AE2-BCFA-9D9249C0003D}"/>
+										<CustomState Name="" ID="{92F8E08F-13FE-4D3A-BF77-467EAAA8F04E}" ShortID="845188394">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ThirdPartyOverlay" ID="{FA10076D-3009-4C13-973C-CD172A4889F7}"/>
+										<CustomState Name="" ID="{0F1981BB-3D4D-4976-A18B-EFB7410F46D2}" ShortID="580103767"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="audiopreview" ID="{862DB040-5DB1-4C1A-8697-1AD25D881648}"/>
+										<CustomState Name="" ID="{BA40A051-0297-47FA-A5BE-07758271EBE7}" ShortID="994948653"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LoadingScreen" ID="{3AAB08EA-DCC5-4D0A-B6D3-92B41F636AAD}"/>
+										<CustomState Name="" ID="{9F46A0F9-AB41-44B3-B6C8-651131555843}" ShortID="404896618">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="EndRound" ID="{BF0B2E05-8177-4E49-A7CA-8EA322945877}"/>
+										<CustomState Name="" ID="{7A44750E-501F-468F-A2B2-EE34E352481A}" ShortID="267603007">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="musicpreview" ID="{DD4519C0-C319-4E5A-A596-08C61AD3BC36}"/>
+										<CustomState Name="" ID="{D2BA4700-1E87-4ADA-88AA-591BADC756A6}" ShortID="695150584"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Replay" ID="{7FE290AA-EDEE-4F44-8B61-D8259BFE2240}"/>
+										<CustomState Name="" ID="{387847D8-F255-435E-8764-346F2CDE3847}" ShortID="381850525">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="BeginRound" ID="{AB05C46A-FFC2-4F4F-90EA-38EF9D19D7A8}"/>
+										<CustomState Name="" ID="{F1993CD0-A4FE-47D7-9673-35D0FD39857C}" ShortID="346889881">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Pause" ID="{93A4AB45-B4FE-4F5B-8B40-DF0FE0A7D966}"/>
+										<CustomState Name="" ID="{9CF6826D-57F2-4637-AE9F-FCBFBA8CD56E}" ShortID="127041283">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="34"/>
+												<Property Name="Volume" Type="Real64" Value="-2"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</ActorMixer>
+						<ActorMixer Name="AM_Ambient_NoReplayNoUI" ID="{74A1C340-B63D-4E68-8DAB-E27F5130FE08}" ShortID="272737997">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{399F84FE-F442-45E4-B8BF-9DC62877D7E3}" ShortID="643588524">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Volume_Ambient" ID="{60912FC4-6408-408B-A35D-9273E45FCA0E}" WorkUnitID="{87A1264F-B518-46C0-B1F5-78A0DC82B420}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{FDA14498-71EF-4EF2-BABD-894BCCD2F2B8}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-96</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<Custom CreatedFrom="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}">
+										<Conversion Name="Vorbis Quality Low (Custom)" ID="{252AC826-3967-4F5C-9B99-D5A8D9CAE36F}">
+											<PropertyList>
+												<Property Name="Channels" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Color" Type="int16" Value="19"/>
+												<Property Name="LRMix" Type="Real64">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MinSampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">0</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+												<Property Name="SampleRate" Type="int32">
+													<ValueList>
+														<Value Platform="Windows">44100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ConversionPluginInfoList>
+												<ConversionPluginInfo Platform="Windows">
+													<ConversionPlugin Name="" ID="{CBBABD3D-C3E9-49CB-8F36-4BC6C18661C8}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+														<PropertyList>
+															<Property Name="QualityFactor" Type="Real32" Value="0"/>
+														</PropertyList>
+													</ConversionPlugin>
+												</ConversionPluginInfo>
+											</ConversionPluginInfoList>
+										</Conversion>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="_ushkbziip" ID="{DE7145D2-C086-46CC-8098-05B6FA017097}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="RC_Thunder_Close" ID="{010A51E7-8793-44F1-8BB5-71A9F2DB91E9}" ShortID="733384932">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="thunder_close0" ID="{198A6B02-F279-4B28-B333-D60B8F1CA872}" ShortID="106130105">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="thunder_close0" ID="{2EB4193B-3EC7-4561-8660-D9987DA3D33E}" ShortID="808205698">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>thunder_close0.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="thunder_close0" ID="{2EB4193B-3EC7-4561-8660-D9987DA3D33E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="thunder_close1" ID="{52D80299-1020-4C9F-9941-94DB26557C30}" ShortID="1044555721">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="thunder_close1" ID="{D0A2ADA8-4748-44BA-B9F3-0894BA493BA2}" ShortID="849142218">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>thunder_close1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="thunder_close1" ID="{D0A2ADA8-4748-44BA-B9F3-0894BA493BA2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="thunder_close2" ID="{5C0737E1-8CF9-48FF-88EC-3A3D27963DF9}" ShortID="854975453">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="thunder_close2" ID="{85D51C40-6D29-4764-9013-55F1671D0BD2}" ShortID="370681410">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>thunder_close2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="thunder_close2" ID="{85D51C40-6D29-4764-9013-55F1671D0BD2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="rain_loop" ID="{9AE9F784-7940-47FC-B055-92E5DB68EB3A}" ShortID="785421966">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="rain_loop" ID="{2E2A5EE1-CB27-47A7-A773-5557BDDBAFF8}" ShortID="462610599">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>rain_loop.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="rain_loop" ID="{2E2A5EE1-CB27-47A7-A773-5557BDDBAFF8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="RC_Thunder_Far" ID="{3DAB250C-4E12-484B-90F6-BB4A4B63496D}" ShortID="348143032">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom CreatedFrom="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}">
+												<Conversion Name="Vorbis Quality Low (Custom)" ID="{282A1C5D-7E53-4A50-9851-A39E18C80659}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Color" Type="int16" Value="19"/>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">36000</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{BD615F5D-C4A7-40BC-B839-6EDA7417BD0A}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+																<PropertyList>
+																	<Property Name="QualityFactor" Type="Real32" Value="0"/>
+																</PropertyList>
+															</ConversionPlugin>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="thunder_far0" ID="{8A63C97C-E453-4591-8DB4-451713397FFB}" ShortID="269679135">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="thunder_far0" ID="{DDB85852-206B-456E-AA03-115E52041D9A}" ShortID="780850226">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>thunder_far0.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="thunder_far0" ID="{DDB85852-206B-456E-AA03-115E52041D9A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="thunder_far1" ID="{412732B1-9333-4D23-9A0E-8D6285FA986C}" ShortID="304388814">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="thunder_far1" ID="{77C9058D-08A5-4698-98B2-38AFCDAD31AE}" ShortID="474826195">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>thunder_far1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="thunder_far1" ID="{77C9058D-08A5-4698-98B2-38AFCDAD31AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RC_Thunder_Mid" ID="{0BF4A5FC-B687-49F7-8CC4-C438A3C84E61}" ShortID="408652408">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<Custom CreatedFrom="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}">
+												<Conversion Name="Vorbis Quality Low (Custom)" ID="{4F739AFF-E413-4A73-BD8E-82BACFEC5F3E}">
+													<PropertyList>
+														<Property Name="Channels" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Color" Type="int16" Value="19"/>
+														<Property Name="LRMix" Type="Real64">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MaxSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="MinSampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">0</Value>
+															</ValueList>
+														</Property>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="SampleRate" Type="int32">
+															<ValueList>
+																<Value Platform="Windows">36000</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ConversionPluginInfoList>
+														<ConversionPluginInfo Platform="Windows">
+															<ConversionPlugin Name="" ID="{4A5943D5-F963-48A7-8A2F-869AE9AAE3EB}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+																<PropertyList>
+																	<Property Name="QualityFactor" Type="Real32" Value="0"/>
+																</PropertyList>
+															</ConversionPlugin>
+														</ConversionPluginInfo>
+													</ConversionPluginInfoList>
+												</Conversion>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="thunder_mid0" ID="{053D07A6-C928-4C10-B9FF-C0B400203A78}" ShortID="459108400">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality Low" ID="{AD876647-70E5-492F-86C9-FFDED7CB6C9E}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{54C20029-76C5-4D92-B95F-B353EAF96598}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="thunder_mid0" ID="{6AFDB613-3ED7-42F9-9867-4E2A96A8C318}" ShortID="512299211">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="LoopEnd" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimBegin" Type="Real64" Value="-0.001"/>
+														<Property Name="TrimEnd" Type="Real64" Value="-0.001"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>thunder_mid0.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="thunder_mid0" ID="{6AFDB613-3ED7-42F9-9867-4E2A96A8C318}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="InUI" ID="{12C41982-A10C-4C42-ABA9-6563EB0FB31B}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="MainMenu" ID="{A0EA3D20-DF24-42D9-A8FD-44F51E356A5D}"/>
+										<CustomState Name="" ID="{74802E1B-2BB7-40FB-A99C-4159E63F9621}" ShortID="251456632">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="PreMatchLobby" ID="{AAA8A8C7-8901-450F-A97A-E2CF0F062455}"/>
+										<CustomState Name="" ID="{56BFB4D7-EC50-44DE-ABFD-FE6DA154A7F7}" ShortID="580291949"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="PremiumGarage" ID="{4E88957B-CADC-462B-841D-CFCDC1281F44}"/>
+										<CustomState Name="" ID="{CABBCC81-1408-4F07-A778-5B2A9B1A43C5}" ShortID="894855315"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Roulette" ID="{7C298D20-AA32-49F8-A25D-9F62B76D74AC}"/>
+										<CustomState Name="" ID="{33AA692C-7D33-4DC9-B23D-FE4B523F8E89}" ShortID="384774873"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="MidGameMenu" ID="{B6468C15-3BDF-4A71-949A-0C71654036ED}"/>
+										<CustomState Name="" ID="{F05D9692-F6BA-41FA-B21F-9F741CCE807A}" ShortID="346752408"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="WinnerMenu" ID="{E9E4F7B0-02E3-4AE2-BCFA-9D9249C0003D}"/>
+										<CustomState Name="" ID="{429032E5-F278-4B69-809F-5EBDC09A9CD0}" ShortID="791384485">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ThirdPartyOverlay" ID="{FA10076D-3009-4C13-973C-CD172A4889F7}"/>
+										<CustomState Name="" ID="{B88CA7C6-F04F-404D-ACA6-2A10476A97DF}" ShortID="397543544"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="audiopreview" ID="{862DB040-5DB1-4C1A-8697-1AD25D881648}"/>
+										<CustomState Name="" ID="{D26972C3-7581-46D0-BCC6-04E58A649662}" ShortID="7414435"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="LoadingScreen" ID="{3AAB08EA-DCC5-4D0A-B6D3-92B41F636AAD}"/>
+										<CustomState Name="" ID="{F599910A-F5D9-4001-8EEB-CC296827C1AC}" ShortID="788178648">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="EndRound" ID="{BF0B2E05-8177-4E49-A7CA-8EA322945877}"/>
+										<CustomState Name="" ID="{9055A6AC-1BCE-435B-8042-8F59F34A2423}" ShortID="822762954"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="musicpreview" ID="{DD4519C0-C319-4E5A-A596-08C61AD3BC36}"/>
+										<CustomState Name="" ID="{9AAB1630-E0F8-4D67-9A72-AEE84850EA39}" ShortID="106560663"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Replay" ID="{7FE290AA-EDEE-4F44-8B61-D8259BFE2240}"/>
+										<CustomState Name="" ID="{00FB2231-5F97-47B6-B23D-CDD932286FB9}" ShortID="627468532">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-10"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="BeginRound" ID="{AB05C46A-FFC2-4F4F-90EA-38EF9D19D7A8}"/>
+										<CustomState Name="" ID="{FBF3DCA8-B86E-4F1E-9492-E87BE7AC6A4D}" ShortID="193167562"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Pause" ID="{93A4AB45-B4FE-4F5B-8B40-DF0FE0A7D966}"/>
+										<CustomState Name="" ID="{7E715F05-E167-4F60-B7CE-B53B75B4C019}" ShortID="831206568">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Volume" Type="Real64" Value="-8"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

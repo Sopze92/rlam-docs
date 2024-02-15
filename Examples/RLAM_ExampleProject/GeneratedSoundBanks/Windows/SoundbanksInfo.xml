@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Sope9\Documents\WwiseProjects\RLAM_ExampleProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Sope9\Documents\WwiseProjects\RLAM_ExampleProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Sope9\Documents\WwiseProjects\RLAM_ExampleProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Sope9\Documents\WwiseProjects\RLAM_ExampleProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1184132672" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\RLAM_ExampleMap0</ObjectPath>
+			<ShortName>RLAM_ExampleMap0</ShortName>
+			<Path>RLAM_ExampleMap0.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3103472528" Name="Play_intro" ObjectPath="\Events\Default Work Unit\Play_intro"/>
+				<Event Id="2417906001" Name="Play_introhelp" ObjectPath="\Events\Default Work Unit\Play_introhelp"/>
+				<Event Id="2899400249" Name="Play_minigame" ObjectPath="\Events\Default Work Unit\Play_minigame"/>
+				<Event Id="3927607267" Name="Play_MPC_GameplayMusic_Background" ObjectPath="\Events\Default Work Unit\Play_MPC_GameplayMusic_Background"/>
+				<Event Id="3360485783" Name="Play_MPC_GameplayMusic_Background_USER" ObjectPath="\Events\Default Work Unit\Play_MPC_GameplayMusic_Background_USER"/>
+				<Event Id="2791365190" Name="Play_music_nonbg_ball" ObjectPath="\Events\Default Work Unit\Play_music_nonbg_ball"/>
+				<Event Id="2486795302" Name="Play_music_nonbg_supersonic" ObjectPath="\Events\Default Work Unit\Play_music_nonbg_supersonic"/>
+				<Event Id="1012011693" Name="Play_rain_loop" ObjectPath="\Events\Default Work Unit\Play_rain_loop"/>
+				<Event Id="3277375035" Name="Play_RC_Minigame_Hit" ObjectPath="\Events\Default Work Unit\Play_RC_Minigame_Hit"/>
+				<Event Id="2060260132" Name="Play_RC_Minigame_Miss" ObjectPath="\Events\Default Work Unit\Play_RC_Minigame_Miss"/>
+				<Event Id="774032510" Name="Play_RC_Minigame_MissBig" ObjectPath="\Events\Default Work Unit\Play_RC_Minigame_MissBig"/>
+				<Event Id="2957905129" Name="Play_RC_Minigame_Quit" ObjectPath="\Events\Default Work Unit\Play_RC_Minigame_Quit"/>
+				<Event Id="4159405073" Name="Play_RC_Minigame_Touch" ObjectPath="\Events\Default Work Unit\Play_RC_Minigame_Touch"/>
+				<Event Id="2497141053" Name="Play_RC_Thunder_Close" ObjectPath="\Events\Default Work Unit\Play_RC_Thunder_Close"/>
+				<Event Id="2286113158" Name="Play_RC_Thunder_Far" ObjectPath="\Events\Default Work Unit\Play_RC_Thunder_Far"/>
+				<Event Id="1613287195" Name="Play_RC_Thunder_Mid" ObjectPath="\Events\Default Work Unit\Play_RC_Thunder_Mid"/>
+				<Event Id="2757309175" Name="Play_SC_Minigame_Combo" ObjectPath="\Events\Default Work Unit\Play_SC_Minigame_Combo"/>
+				<Event Id="1936385946" Name="Play_SC_Minigame_ManyMisses" ObjectPath="\Events\Default Work Unit\Play_SC_Minigame_ManyMisses"/>
+				<Event Id="3937617700" Name="Play_SCLoop_DistanceToPlayer" ObjectPath="\Events\Default Work Unit\Play_SCLoop_DistanceToPlayer"/>
+				<Event Id="4252833766" Name="Play_SCLoop_Supersonic" ObjectPath="\Events\Default Work Unit\Play_SCLoop_Supersonic"/>
+				<Event Id="1033268325" Name="Reset_SC_Minigame" ObjectPath="\Events\Default Work Unit\Reset_SC_Minigame"/>
+				<Event Id="2493348357" Name="Stop_MPC_GameplayMusic_Background" ObjectPath="\Events\Default Work Unit\Stop_MPC_GameplayMusic_Background"/>
+				<Event Id="2407146447" Name="Stop_SCLoops" ObjectPath="\Events\Default Work Unit\Stop_SCLoops"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="3210776" Language="SFX">
+					<ShortName>quit0.wav</ShortName>
+					<Path>SFX\quit0_575E6C1F.wem</Path>
+				</File>
+				<File Id="8143036" Language="SFX">
+					<ShortName>missbig1.wav</ShortName>
+					<Path>SFX\missbig1_575E6C1F.wem</Path>
+				</File>
+				<File Id="65319825" Language="SFX">
+					<ShortName>missbig2.wav</ShortName>
+					<Path>SFX\missbig2_575E6C1F.wem</Path>
+				</File>
+				<File Id="67469363" Language="SFX">
+					<ShortName>touch3.wav</ShortName>
+					<Path>SFX\touch3_575E6C1F.wem</Path>
+				</File>
+				<File Id="108269748" Language="SFX">
+					<ShortName>music_bg_on.wav</ShortName>
+					<Path>SFX\music_bg_on_575E6C1F.wem</Path>
+				</File>
+				<File Id="112927738" Language="SFX">
+					<ShortName>onecandle2007_audiomirage_loop.wav</ShortName>
+					<Path>SFX\onecandle2007_audiomirage_loop_9D9CD5DD.wem</Path>
+				</File>
+				<File Id="114888333" Language="SFX">
+					<ShortName>music_nonbg_off.wav</ShortName>
+					<Path>SFX\music_nonbg_off_575E6C1F.wem</Path>
+				</File>
+				<File Id="117723612" Language="SFX">
+					<ShortName>manymisses2.wav</ShortName>
+					<Path>SFX\manymisses2_575E6C1F.wem</Path>
+				</File>
+				<File Id="130229103" Language="SFX">
+					<ShortName>welcome.wav</ShortName>
+					<Path>SFX\welcome_9D9CD5DD.wem</Path>
+				</File>
+				<File Id="151105383" Language="SFX">
+					<ShortName>hit2.wav</ShortName>
+					<Path>SFX\hit2_575E6C1F.wem</Path>
+				</File>
+				<File Id="187135060" Language="SFX">
+					<ShortName>combo3.wav</ShortName>
+					<Path>SFX\combo3_575E6C1F.wem</Path>
+				</File>
+				<File Id="196082001" Language="SFX">
+					<ShortName>miss2.wav</ShortName>
+					<Path>SFX\miss2_575E6C1F.wem</Path>
+				</File>
+				<File Id="246076900" Language="SFX">
+					<ShortName>touch0.wav</ShortName>
+					<Path>SFX\touch0_575E6C1F.wem</Path>
+				</File>
+				<File Id="299719220" Language="SFX">
+					<ShortName>touch2.wav</ShortName>
+					<Path>SFX\touch2_575E6C1F.wem</Path>
+				</File>
+				<File Id="324808913" Language="SFX">
+					<ShortName>quit1.wav</ShortName>
+					<Path>SFX\quit1_575E6C1F.wem</Path>
+				</File>
+				<File Id="339049700" Language="SFX">
+					<ShortName>music_nonbg_ball.wav</ShortName>
+					<Path>SFX\music_nonbg_ball_575E6C1F.wem</Path>
+				</File>
+				<File Id="370681410" Language="SFX">
+					<ShortName>thunder_close2.wav</ShortName>
+					<Path>SFX\thunder_close2_575E6C1F.wem</Path>
+				</File>
+				<File Id="375831548" Language="SFX">
+					<ShortName>missbig3.wav</ShortName>
+					<Path>SFX\missbig3_575E6C1F.wem</Path>
+				</File>
+				<File Id="390718351" Language="SFX">
+					<ShortName>manymisses3.wav</ShortName>
+					<Path>SFX\manymisses3_575E6C1F.wem</Path>
+				</File>
+				<File Id="455464048" Language="SFX">
+					<ShortName>miss3.wav</ShortName>
+					<Path>SFX\miss3_575E6C1F.wem</Path>
+				</File>
+				<File Id="462610599" Language="SFX">
+					<ShortName>rain_loop.wav</ShortName>
+					<Path>SFX\rain_loop_9D9CD5DD.wem</Path>
+				</File>
+				<File Id="465446412" Language="SFX">
+					<ShortName>hit0.wav</ShortName>
+					<Path>SFX\hit0_575E6C1F.wem</Path>
+				</File>
+				<File Id="474826195" Language="SFX">
+					<ShortName>thunder_far1.wav</ShortName>
+					<Path>SFX\thunder_far1_575E6C1F.wem</Path>
+				</File>
+				<File Id="512299211" Language="SFX">
+					<ShortName>thunder_mid0.wav</ShortName>
+					<Path>SFX\thunder_mid0_575E6C1F.wem</Path>
+				</File>
+				<File Id="538212292" Language="SFX">
+					<ShortName>intro.wav</ShortName>
+					<Path>SFX\intro_575E6C1F.wem</Path>
+				</File>
+				<File Id="561042353" Language="SFX">
+					<ShortName>combo6.wav</ShortName>
+					<Path>SFX\combo6_575E6C1F.wem</Path>
+				</File>
+				<File Id="562627951" Language="SFX">
+					<ShortName>hit1.wav</ShortName>
+					<Path>SFX\hit1_575E6C1F.wem</Path>
+				</File>
+				<File Id="568679459" Language="SFX">
+					<ShortName>quit3.wav</ShortName>
+					<Path>SFX\quit3_575E6C1F.wem</Path>
+				</File>
+				<File Id="571121194" Language="SFX">
+					<ShortName>manymisses0.wav</ShortName>
+					<Path>SFX\manymisses0_575E6C1F.wem</Path>
+				</File>
+				<File Id="626274325" Language="SFX">
+					<ShortName>SARPBC_theme_loop.wav</ShortName>
+					<Path>SFX\SARPBC_theme_loop_575E6C1F.wem</Path>
+				</File>
+				<File Id="664067424" Language="SFX">
+					<ShortName>touch1.wav</ShortName>
+					<Path>SFX\touch1_575E6C1F.wem</Path>
+				</File>
+				<File Id="684599507" Language="SFX">
+					<ShortName>miss1.wav</ShortName>
+					<Path>SFX\miss1_575E6C1F.wem</Path>
+				</File>
+				<File Id="699641810" Language="SFX">
+					<ShortName>hit3.wav</ShortName>
+					<Path>SFX\hit3_575E6C1F.wem</Path>
+				</File>
+				<File Id="780850226" Language="SFX">
+					<ShortName>thunder_far0.wav</ShortName>
+					<Path>SFX\thunder_far0_575E6C1F.wem</Path>
+				</File>
+				<File Id="808205698" Language="SFX">
+					<ShortName>thunder_close0.wav</ShortName>
+					<Path>SFX\thunder_close0_575E6C1F.wem</Path>
+				</File>
+				<File Id="822144043" Language="SFX">
+					<ShortName>miss0.wav</ShortName>
+					<Path>SFX\miss0_575E6C1F.wem</Path>
+				</File>
+				<File Id="832916247" Language="SFX">
+					<ShortName>missbig0.wav</ShortName>
+					<Path>SFX\missbig0_575E6C1F.wem</Path>
+				</File>
+				<File Id="839360804" Language="SFX">
+					<ShortName>minigame.wav</ShortName>
+					<Path>SFX\minigame_575E6C1F.wem</Path>
+				</File>
+				<File Id="849142218" Language="SFX">
+					<ShortName>thunder_close1.wav</ShortName>
+					<Path>SFX\thunder_close1_575E6C1F.wem</Path>
+				</File>
+				<File Id="925560076" Language="SFX">
+					<ShortName>combo10.wav</ShortName>
+					<Path>SFX\combo10_575E6C1F.wem</Path>
+				</File>
+				<File Id="955792442" Language="SFX">
+					<ShortName>manymisses1.wav</ShortName>
+					<Path>SFX\manymisses1_575E6C1F.wem</Path>
+				</File>
+				<File Id="956321977" Language="SFX">
+					<ShortName>music_bg_off.wav</ShortName>
+					<Path>SFX\music_bg_off_575E6C1F.wem</Path>
+				</File>
+				<File Id="961944611" Language="SFX">
+					<ShortName>music_nonbg_supersonic.wav</ShortName>
+					<Path>SFX\music_nonbg_supersonic_575E6C1F.wem</Path>
+				</File>
+				<File Id="977818241" Language="SFX">
+					<ShortName>quit2.wav</ShortName>
+					<Path>SFX\quit2_575E6C1F.wem</Path>
+				</File>
+				<File Id="996064617" Language="SFX">
+					<ShortName>combo8.wav</ShortName>
+					<Path>SFX\combo8_575E6C1F.wem</Path>
+				</File>
+				<File Id="1005707616" Language="SFX">
+					<ShortName>easymode.wav</ShortName>
+					<Path>SFX\easymode_575E6C1F.wem</Path>
+				</File>
+				<File Id="1051049212" Language="SFX">
+					<ShortName>introhelp.wav</ShortName>
+					<Path>SFX\introhelp_575E6C1F.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

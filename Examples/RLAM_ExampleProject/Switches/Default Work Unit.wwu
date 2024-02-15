@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{38988C8F-3315-4F1E-B0BE-EC9702F9D8DF}" SchemaVersion="94">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{38988C8F-3315-4F1E-B0BE-EC9702F9D8DF}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Ball_ImpactIntensity" ID="{1D228E3E-65B3-443D-9D4B-99F02F819A41}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Light" ID="{30E52431-27A4-4178-8BA9-D963AECFADFE}"/>
+						<Switch Name="Hard" ID="{CA1E7F88-8BA0-4911-B8B9-3992CB4171FA}"/>
+						<Switch Name="Medium" ID="{886500E0-500E-4A54-B562-D8CFF9607542}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="ImpactIntensity" ID="{7BD1A174-9CDC-49FB-AE3C-C38CE9FC0B68}"/>
+						<Curve Name="" ID="{1E23921C-2B31-4FE7-B34A-653F75613640}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>27.027</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>743.243</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1510.135</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2000</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="BallDistance" ID="{F00A0883-DC20-425E-A480-75AE1AF506DD}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Close" ID="{6559CB53-DA0D-4A35-88CA-F4E5C07C69C0}"/>
+						<Switch Name="Far" ID="{0BB63499-9FA3-43B3-8548-451749F3E66A}"/>
+						<Switch Name="Mid" ID="{516FBEA0-5821-4C75-A475-966EEB30389D}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="DistanceToPlayer" ID="{B5383381-032A-4182-925E-8733FA0A8065}"/>
+						<Curve Name="" ID="{07ED032D-6CCA-48A9-B7D0-DE4072D9178F}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1500</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>5270.271</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>10000</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="_uqxcdfmfp" ID="{2A38D333-C1BE-40F2-9D2D-8C2B9A4AC850}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="False" ID="{29339708-EC36-4FC0-B9FA-5C4CEBA56A48}"/>
+						<Switch Name="True" ID="{E2EF7AD3-0C7E-4792-80EB-9A451CE26FDA}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="WheelsOnGround" ID="{0898EEF3-7AB9-4FA4-874C-3BAD9ABEDFEE}"/>
+						<Curve Name="" ID="{60035F0C-0BB3-4EDB-ACA0-75B97F3DE47B}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.5</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="_uzkiuapve" ID="{548A4875-ECEE-48D8-AA85-EA2297162D35}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Light" ID="{144B53DD-7B21-4608-9B3B-708BCA8E8B3C}"/>
+						<Switch Name="MediumLight" ID="{440F6D07-9BBE-43F4-9C59-617B61E0B1A3}"/>
+						<Switch Name="Medium" ID="{2660B5BC-9478-4D3D-B86F-74C2378C8011}"/>
+						<Switch Name="Hard" ID="{E22954F5-DCF9-47DA-BC5B-2E22D93F26B7}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="ImpactIntensity" ID="{7BD1A174-9CDC-49FB-AE3C-C38CE9FC0B68}"/>
+						<Curve Name="" ID="{92B11858-0FA9-4C8E-BD46-6B279687131E}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>766.892</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1258.108</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1751.351</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2000</XPos>
+									<YPos>4</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="_ugcuiwiay" ID="{A9954FF2-0DF8-4122-B4DE-301618B5B3CE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="On" ID="{9EB29F70-9F85-42FB-9F8F-BFBE737552F1}"/>
+						<Switch Name="Off" ID="{9E7CF93B-0DF2-4C1C-8EB4-8C365801DBA3}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="WheelsOnGround" ID="{0898EEF3-7AB9-4FA4-874C-3BAD9ABEDFEE}"/>
+						<Curve Name="" ID="{4EAB4C66-CAD1-48F1-A8AA-E335615A76D8}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.5</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="_ukuudhunm" ID="{2A6DB6E8-D27D-4682-B834-24D36F3D36A5}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Low" ID="{A5E732D3-458C-4730-A604-C5EEC721F110}"/>
+						<Switch Name="Med" ID="{D73F1A9F-053D-49C0-A8ED-4C9511F1E6BF}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Speed" ID="{5BE80817-C023-4407-AEEE-585219E68CCE}"/>
+						<Curve Name="" ID="{0983A078-7116-4737-999C-3443BC53C41B}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>814.696</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2300</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="_ughzvblgp" ID="{B764FAE6-75C8-43C7-857A-0661CC30C802}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Walk" ID="{093D35E6-48C1-4356-AF30-6AD377A93162}"/>
+						<Switch Name="Trot" ID="{5B5F6CF5-E893-4484-BA70-82B3BE7801B0}"/>
+						<Switch Name="Gallop" ID="{BD704D6B-8AC2-40F4-BB83-558131E02E64}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Speed" ID="{5BE80817-C023-4407-AEEE-585219E68CCE}"/>
+						<Curve Name="" ID="{D1209E31-8B3B-4736-947F-D46E31F2EC6E}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>600</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1500</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2300</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="_uyzaylcyy" ID="{216A3D48-296E-4F53-90BE-0ECC0D9BE88C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Slow" ID="{A03CCADA-0269-4C61-898B-454ED91783EB}"/>
+						<Switch Name="Medium" ID="{195CCC71-1217-43C3-A6AE-6BD71BA54D6A}"/>
+						<Switch Name="Fast" ID="{109EE7DD-F3CC-4C3A-AE7B-CA51424953E9}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Speed" ID="{5BE80817-C023-4407-AEEE-585219E68CCE}"/>
+						<Curve Name="" ID="{FD3AC2B6-8B7A-4C4B-B273-6397C45BD917}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>3.885</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1165.541</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2012.5</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2300</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="IsLocal" ID="{7638E7CE-AF05-46DB-8B82-DECE71604802}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="False" ID="{4082221D-0492-4B4D-B92B-96C1CB940043}"/>
+						<Switch Name="True" ID="{EA3FF64C-5B71-4078-930B-BD2F55A6EA8F}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="IsLocal" ID="{FFE8E684-E6BC-43E8-A276-5D750998174B}"/>
+						<Curve Name="" ID="{9C269690-1241-41B7-A48C-9FA40C337E4C}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.5</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="_ufebeedad" ID="{A8605EA2-5A2C-435F-A19C-E0F4AF19DD5D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="_uihetqmwk" ID="{4901E6AE-D057-4A49-8513-7FB52F92A222}"/>
+						<Switch Name="_uvtbbuttn" ID="{A22154C3-F98E-498A-ADE8-CA0F620DF9BA}"/>
+						<Switch Name="_upayjmotz" ID="{76775943-D82F-4463-8FBB-922C8D951A52}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="_ufebeedad" ID="{727AF64E-9649-407C-AF01-44B7100598CF}"/>
+						<Curve Name="" ID="{B4B3B436-FDD5-4820-9B6D-9673499D3C27}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Random1" ID="{A5ED0762-6179-499C-B4FF-5411854FF950}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="A" ID="{98911D46-44DA-4A73-B0C2-AAF84F7CAD9C}"/>
+						<Switch Name="B" ID="{FB532BE0-1029-4CEF-92FA-50AE34B2ED6D}"/>
+						<Switch Name="C" ID="{926F3FFA-A374-4DCA-A47E-D740416532EB}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="_uoqsseuxp" ID="{D28816AE-1E1B-4842-AA4E-F146EE36661E}"/>
+						<Curve Name="" ID="{0F0AA6D0-A480-4036-A1E8-EE7931AB09A2}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.757</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1.747</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Random2" ID="{A614619B-C52F-499B-888A-DED2F33143E7}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="A" ID="{F633F569-1CFE-4E48-B664-3249454C221D}"/>
+						<Switch Name="B" ID="{569B0E66-630B-42D9-8BA9-19DA1B663FF8}"/>
+						<Switch Name="C" ID="{633EACCB-663E-4241-89B4-EE1FF2149231}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="_ufbeltnko" ID="{720C8F49-B3C9-4291-BE13-72E296C3ADF8}"/>
+						<Curve Name="" ID="{B750EB4D-8AA7-463B-B607-9740B904CAA8}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.757</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1.747</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Random3" ID="{7C22C36F-039E-4F9B-AAE6-460D014CA31F}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="17"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="A" ID="{CD51FC7E-4444-4521-A50E-8F39954F3CF1}"/>
+						<Switch Name="B" ID="{4607C8E3-C6FB-43D1-B401-8AFCC44C024A}"/>
+						<Switch Name="C" ID="{620E69F3-4DF1-474F-98E8-D2100F94D9EE}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="_ubpjnlbdz" ID="{724B13B5-B3A7-4E95-A73C-4C1082D7AADE}"/>
+						<Curve Name="" ID="{75246CCB-93E3-46F1-BB89-E3BAE1DC371B}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.757</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1.747</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
