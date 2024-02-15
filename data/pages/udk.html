@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./../resources/styles.css">
+	</head>
+	<body>
+		<div class="page-content">
+			<div class="header-content">
+				<p>Here you'll find the <b>UDK</b>/<b>Kismet</b> parts of the <b>AudioModding</b> elements you need to know about.</p>
+				<div class="header-separator"></div>
+			</div>
+			<p class="pcenter psemititle no-select">UDK ASSETS</p>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>AkBank</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p><b>AkBank</b> assets are just pointers to a <b>.bnk</b> file located in your -<i>CookedPCConsole</i>- folder, not only the ones you create.</p>
+					<div class="pwrap pyellow"><p class="pcolorized">Asset name in package is what determines the <b>.bnk</b> file it will load, so -<i>example_bank_asset</i>- will load -<i>CookedPCConsole\example_bank_asset.bnk</i>- file.</p></div>
+					<div class="pwrap pblue"><p class="pcolorized">If using <b>AudioLoader</b> plugin for <b>BakkesMod</b>, game will automatically seek for <b>.bnk</b> files in the map's folder, no aditional actions are required.</p></div>
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>PROPERTIES</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:160px">AutoLoad</div><div class="value">Automatically load the Bank upon level loading. (Recommended <b>OFF</b>, may cause issues)</div></div>
+						<div class="keyvalue"><div class="key" style="width:160px">GenerateDefinition</div><div class="value">Decode the <b>SoundBank</b> upon loading it.</div></div>
+					</div>
+					<div class="section-banner no-select"><h1>NOTES</h1></div>
+					<p>As <b>UDK</b> deletes every unused asset upon saving, I recommend making some easy <b>Kismet</b> to load the <b>AkBank</b> on level startup as soon as you create the asset, this way you'll have your <b>AkBank</b> ready as soon as the map loads, and the <b>AkBank</b> asset will never be deleted by <b>UDK</b> even if no <b>AkSoundCue</b> assets reference it. (Could happen during the map's development stage):</p>
+					<ul class="list">
+						<li>In <b>Kismet</b>, add an <b><span class="tyellow">AkLoadBank</span></b> node.<p class="psmol">Node is located at -<i>New Action -> AkAudio -> AkLoadBank</i>-</p></li>
+						<li>In the <b><span class="tyellow">AkLoadBank</span></b> node's properties panel set your <b>AkBank</b> asset in the -<i>Bank</i>- variable slot.</li>
+						<li>Connect the <span class="tyellow"><i>Load</i></span> input to a <span class="tred"><i>Loaded and Visible</i></span> output of a <b><span class="tred">Level Loaded</span></b> node.</li>
+						<li>Repeat this for every <b>AkBank</b> asset you want to use in your map.</li>
+					</ul>
+					<div class="pwrap pblue"><p class="pcolorized">You can use the <span class="tyellow">Load</span> and <span class="tyellow">Unload</span> inputs at your will, but for most cases I recommend to load it once at level startup and never unload it.</p></div>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>AkSoundCue</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p><b>AkSoundCue</b> assets are used to trigger <b>SoundBank</b> events defined in <b>Wwise</b>.</p>
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>PROPERTIES</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">RequiredBank</div><div class="value">The <b>AkBank</b> asset required to trigger this <b>AkSoundCue</b> events.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">StartEvent</div><div class="value">The <b>SoundBank</b> event to be called on -<i>Play</i>- call.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">StopEvent</div><div class="value">The <b>SoundBank</b> event to be called on -<i>Stop</i>- call.</div></div>
+					</div>
+					<div class="pwrap pyellow"><p class="pcolorized">When calling an event, <b>RocketLeague</b> will load the its required <b>AkBank's .bnk</b> file automatically if it's not loaded yet, but it's highly recommended to load it manually beforehand.</p></div>
+					<div class="pwrap pblue"><p class="pcolorized">Event fields, despite being named <b>StartEvent</b> and <b>StopEvent</b>, can trigger any <b>SoundBank</b> event.</p></div>
+					<div class="section-banner"><h1>NOTES</h1></div>
+					<p>As <b>UDK</b> deletes every unused asset upon saving, don't forget to create a reference to it to prevent its deletion.</p>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>ArenaSoundSettings_TA</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p><b>ArenaSoundSettings_TA</b> assets are used to setup ambient sounds for the game to automatically play upon certain events.</p>
+					<div class="pwrap pblue"><p class="pcolorized">To use this asset you must create a <b>MapInfo_TA</b> on -<i>MyMapInfo</i>- property under -<i>WorldInfo</i>- section of <b>World Properties</b>, then assign this asset in the <b>Sound</b> section of that <b>MapInfo_TA</b></p></div>	
+					<div class="pwrap pyellow"><p class="pcolorized">These are <b>NOT</b> crowd sounds, to define custom crowd sounds use a <b>CrowdSounds_TA</b> asset.</p></div>
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>PROPERTIES</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:220px">InGameMusicCue</div><div class="value">Unknown usage, never seen it used.</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">bDynamicMusic</div><div class="value">Unknown usage, never seen it used.</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">GoalScoreSound</div><div class="value"><b>AKSoundCue</b> to play when any team scores</div></div>
+						<div class="keyvalue"><div class="desc" style="width:256px">VO</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">UpdateStatSounds</div><div class="value">Wether to replace the stat sounds, only used if you define any <b>StatSounds</b></div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">Win</div><div class="value"><b>AKSoundCue</b> to play when you win</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">Lose</div><div class="value"><b>AKSoundCue</b> to play when you lose</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">CountdownStart</div><div class="value"><b>AKSoundCue</b> to play as the countdown sound (repeated x3 every kickoff) (i think unused)</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">CountdownEnd</div><div class="value"><b>AKSoundCue</b> to play as the last countdown sound (the 'go!' sound)</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">OneMinRemaining</div><div class="value"><b>AKSoundCue</b> to play as the 60 sec remaining notice</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">ThirtySecondsRemaining</div><div class="value"><b>AKSoundCue</b> to play as the 30 sec remaining notice</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">OvertimeStart</div><div class="value"><b>AKSoundCue</b> to play when overtime starts</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">StatSounds</div><div class="value">A List of elements used to bind an <b>AkSoundCue</b> to a <b>StatEvent_TA</b></div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">CountDownSoundList</div><div class="value">A list of 11 sounds for the time end's countdown (first one is none, then 1 to 10)</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">RoundCountDownSoundList</div><div class="value">A list of 3 sounds for the time end's countdown (in order: go, 1, 2, 3)</div></div>
+						<div class="keyvalue"><div class="desc" style="width:256px">Music</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">GameStartStinger</div><div class="value"><b>AKSoundCue</b> to play when game starts (like the drums in Hoops)</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">GoalScoreStinger</div><div class="value"><b>AKSoundCue</b> to play when any team scores (usually some horns)</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">EpicSaveStinger</div><div class="value"><b>AKSoundCue</b> to play when an epic save is performed</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">OvertimeStinger</div><div class="value"><b>AKSoundCue</b> to play when overtime starts</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">WinStinger</div><div class="value"><b>AKSoundCue</b> to play when you win</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">LoseStinger</div><div class="value"><b>AKSoundCue</b> to play when you lose</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">ForfeitStinger</div><div class="value"><b>AKSoundCue</b> to play when any team forfeits</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">GoalScoreStingerDelay</div><div class="value">Time to delay <b>GoalScoreStinger</b> playback upon activation (usually between 0.3 and 0.4)</div></div>
+						<div class="keyvalue"><div class="desc" style="width:256px">ReverbEnvironments</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">GoalStingerEnvironment</div><div class="value">Environment settings specific to <b>Goal Stingers</b> (arena stingers + anthems)</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">LevelDefaultEnvironment</div><div class="value"><b>Default</b> environment settings for all arena sounds</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">ArenaReverbShareset</div><div class="value"><b>Wwise</b> project's ShareSet to use for arena reverb</div></div>
+					</div>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>CrowdSoundsBase_TA</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<div class="pwrap pyellow"><p class="pcolorized"><b>CrowdSoundsBase_TA</b> cannot be used by itself but its properties are included and used in both <b>CrowdSounds_TA</b> and <b>CrowdSounds_Knockout_TA</b> asset types.</br></p></div>
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>PROPERTIES</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:220px">Sound</div><div class="value">Base crowd's <b>AkSoundCue</b> to play in a loop</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">GameStart</div><div class="value">List of possible <b>AkSoundCues</b> to play on game start</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">RoundStart</div><div class="value">List of possible <b>AkSoundCues</b> to play on round start</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">MatchEndCountDown</div><div class="value">List of Lists of possible <b>AkSoundCues</b> to play on each countdown second, from 1 to 10</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">LowEnergyChant</div><div class="value"><b>AkSoundCue</b> for the low energy chant</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">OvertimeStart</div><div class="value"><b>AkSoundCue</b> for when overtime starts</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">Win</div><div class="value"><b>AkSoundCue</b> to play when you win</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">Lose</div><div class="value"><b>AkSoundCue</b> to play when you lose</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">Forfeit</div><div class="value"><b>AkSoundCue</b> to play when any team forfeits</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">MatchEndedEncore</div><div class="value"><b>AkSoundCue</b> to play upon match end</div></div>
+						<div class="keyvalue"><div class="key" style="width:220px">MatchEndedEncoreDelay</div><div class="value">Time delay before playing <b>MatchEndedEncore</b> upon activation</div></div>
+					</div>
+					<div class="section-banner no-select"><h1>NOTES</h1></div>
+					<p>On sound lists, <b>Cooldown</b> determines the minimum time game must wait before picking any other sound from that list. <b>CompareType</b> is unknown, maybe some kind of sound weighting.</p>			
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>CrowdSounds_TA</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p><b>CrowdSounds_TA</b> assets are ar used to setup crowd sounds for the game to automatically play.</p>
+					<div class="pwrap pblue"><p class="pcolorized">To use this asset you must create a <b>MapInfo_TA</b> on -<i>MyMapInfo</i>- property under -<i>WorldInfo</i>- section of <b>World Properties</b>, then assign this asset in the <b>Sound</b> section of that <b>MapInfo_TA</b></p></div>				
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>PROPERTIES</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:180px">GoalScored</div><div class="value">List of possible <b>AkSoundCues</b> to play when a goal is scored</div></div>
+						<div class="keyvalue"><div class="key" style="width:180px">ShotAttempt</div><div class="value">List of possible <b>AkSoundCues</b> to play when someone shots on target</div></div>
+						<div class="keyvalue"><div class="key" style="width:180px">OpenGoal</div><div class="value">List of possible <b>AkSoundCues</b> to play when an open goal is scored</div></div>
+						<div class="keyvalue"><div class="key" style="width:180px">Save</div><div class="value">List of possible <b>AkSoundCues</b> to play upon saves</div></div>
+						<div class="keyvalue"><div class="key" style="width:180px">Aerial</div><div class="value">List of possible <b>AkSoundCues</b> to play upon aerials (unknown if goal or touch)</div></div>
+						<div class="keyvalue"><div class="key" style="width:180px">LongTimeNearGoal</div><div class="value">List of possible <b>AkSoundCues</b> to play when players spend long time near net</div></div>
+						<div class="keyvalue"><div class="key" style="width:180px">FastBreak</div><div class="value">Unknown event</div></div>
+						<div class="keyvalue"><div class="key" style="width:180px">Hit0Second</div><div class="value">List of possible <b>AkSoundCues</b> to play upon 0 second hit (unknown if shot or goal)</div></div>
+						<div class="keyvalue"><div class="key" style="width:180px">AnyDemolition</div><div class="value">List of possible <b>AkSoundCues</b> to play upon any player demolished</div></div>
+						<div class="keyvalue"><div class="key" style="width:180px">RelevantDemolition</div><div class="value">List of possible <b>AkSoundCues</b> to play a player's revenge demolition</div></div>
+						<div class="keyvalue"><div class="key" style="width:180px">KickoffTouch</div><div class="value">List of possible <b>AkSoundCues</b> to play on kickoffs</div></div>
+						<div class="keyvalue"><div class="key" style="width:180px">TenseClear</div><div class="value">List of possible <b>AkSoundCues</b> to play upon a clear from ver close to net</div></div>
+					</div>
+					<div class="section-banner no-select"><h1>NOTES</h1></div>
+					<p>On sound lists, <b>Cooldown</b> determines the minimum time game must wait before picking any other sound from that list. <b>CompareType</b> is unknown, maybe some kind of sound weighting.</p>			
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>CrowdSounds_Knockout_TA</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p><b>CrowdSounds_Knockout_TA</b> assets are ar used to setup crowd sounds of the <b>Knockout</b> gamemode for the game to automatically play.</p>
+					<div class="pwrap pblue"><p class="pcolorized">To use this asset you must create a <b>MapInfo_TA</b> on -<i>MyMapInfo</i>- property under -<i>WorldInfo</i>- section of <b>World Properties</b>, then assign this asset in the <b>Sound</b> section of that <b>MapInfo_TA</b></p></div>		
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>PROPERTIES</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:144px">HeavyHit</div><div class="value">List of possible <b>AkSoundCues</b> to play upon hard bumps</div></div>
+						<div class="keyvalue"><div class="key" style="width:144px">LightHit</div><div class="value">List of possible <b>AkSoundCues</b> to play upon bumps</div></div>
+						<div class="keyvalue"><div class="key" style="width:144px">AerialHeavyHit</div><div class="value">List of possible <b>AkSoundCues</b> to play upon hard bumps in the air</div></div>
+						<div class="keyvalue"><div class="key" style="width:144px">AerialLightHit</div><div class="value">List of possible <b>AkSoundCues</b> to play upon bumps in the air</div></div>
+						<div class="keyvalue"><div class="key" style="width:144px">HeavyBlock</div><div class="value">Unknown event</div></div>
+						<div class="keyvalue"><div class="key" style="width:144px">LightBlock</div><div class="value">Unknown event</div></div>
+						<div class="keyvalue"><div class="key" style="width:144px">KnockOut</div><div class="value">List of possible <b>AkSoundCues</b> to play when a player is knocked out</div></div>
+						<div class="keyvalue"><div class="key" style="width:144px">Throw</div><div class="value">List of possible <b>AkSoundCues</b> to play when a player is threw</div></div>
+						<div class="keyvalue"><div class="key" style="width:144px">Grab</div><div class="value">List of possible <b>AkSoundCues</b> to play when a player is grabbed</div></div>
+					</div>
+					<div class="section-banner no-select"><h1>NOTES</h1></div>
+					<p>On sound lists, <b>Cooldown</b> determines the minimum time game must wait before picking any other sound from that list. <b>CompareType</b> is unknown, maybe some kind of sound weighting.</p>			
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>OTHERS</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<div class="section-banner no-select"><h1>ARCHETYPE-ABLE</h1></div>
+					<p>The <b>Ak-</b> classes you can create archetype of but are unusable are:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:256px">AkBusActor</div><div class="value">No usage found.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">AkDialogueEvent</div><div class="value">No usage found in <b>RocketLeague</b>.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">AkEvent</div><div class="value">Used via <b>UnrealScript</b> to trigger a <b>SoundBank</b> event named as the asset.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">AkMusicAnalysis</div><div class="value">Used via <b>UnrealScript</b> for sound analysis purposes (I.E: to achieve music reactive materials).</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">AkRevPhysicsSimulation</div><div class="value">Engine rev simulation, used via <b>UnrealScript</b> by <b>TAGame.EngineAudioProfileREV_TA</b> class.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">AkRevSimPhysicsControls</div><div class="value">Engine rev simulation controls, used via <b>UnrealScript</b> by <b>TAGame.EngineAudioProfileREV_TA</b> class.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">AkSwitch</div><div class="value">Used via <b>UnrealScript</b> to set a <b>SoundBank</b> switch named as the asset.</div></div>
+					</div>
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>NON ARCHETYPE-ABLE</h1></div>
+					<p>The <b>Ak-</b> classes you cannot create archetypes of are <b>UnrealScript-Only</b> classes, some of them used by <b>Psyonix</b> in the game core just to setup the <b>RocketLeague</b> sound system and make it work.</p>
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>ACTOR COMPONENTS</h1></div>
+					<p>
+					Any <b>Ak-</b> class that derives from <b>Component</b> is theorically usable. You can create archetypes and attach your <b>Ak-Component</b> to an existent <b>Actor</b> via <b>Kismet</b>. sadly it would be useless as they do only perform their actions via <b>UnrealScript</b>.
+					Telling you this here just to let you know there's a possibility that in the future we could somehow replace an existent <b>Ak-Component</b> with a custom one and maybe achieve things such as per-map replacement of sounds for <b>boost</b>, <b>ball</b>, <b>jump</b>, etc...
+					</p>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<p class="pcenter psemititle no-select">KISMET NODES</p>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>AkLoadBank</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p><b>AkLoadBank</b> nodes are used to load/unload a <b>.bnk</b> file from an <b>AkBank</b> asset.</p>
+					<p>Node is located at: <i>New Action -> AkAudio -> AkLoadBank</i></p>
+					<div class="section-banner no-select"><h1>INPUTS</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">Load</div><div class="value">Loads the bank from the <b>AkBank</b> defined on its Bank variable.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Unload</div><div class="value">Unloads the bank from the <b>AkBank</b> defined on its Bank variable.</div></div>
+					</div>
+					<div class="section-banner no-select"><h1>OUTPUTS</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">Finished</div><div class="value">Activated as soon as the <b>.bnk</b> file is loaded/unloaded.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Aborted</div><div class="value">Activated if there was an error loading/unloading the <b>.bnk</b> file.</div></div>
+					</div>
+					<div class="section-banner no-select"><h1>VARIABLES</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">Async</div><div class="value">Wether to load the <b>.bnk</b> file asynchronously. preventing the game execution to get blocked during the file reading tasks.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Bank</div><div class="value">The <b>AkBank</b> asset that determines the <b>.bnk</b> file to load.</div></div>
+					</div>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>AkPlaySound</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p><b>AkPlaySound</b> nodes are used to trigger the <b>StartEvent</b> and <b>StopEvent</b> events of an <b>AkSoundCue</b> asset.</p>
+					<p>Node is located at: <i>New Action -> AkAudio -> AkPlaySound</i></p>
+					<div class="section-banner no-select"><h1>INPUTS</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">Play</div><div class="value">Calls the <b>StartEvent</b> event of the <b>AkSoundCue</b> asset assigned to its <b>SoundCue</b> variable.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Stop</div><div class="value">Calls the <b>StopEvent</b> event of the <b>AkSoundCue</b> asset assigned to its <b>SoundCue</b> variable.</div></div>
+					</div>
+					<div class="section-banner no-select"><h1>VARIABLES</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">SoundCue</div><div class="value">The <b>AkSoundCue</b> asset that defines the <b>SoundBank</b> events to be called.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">bBGMusic</div><div class="value">Marks this event as a background music event, has no known effect in <b>RocketLeague</b>.</div></div>
+					</div>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>AkPlaySoundAndSeek</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p><b>AkPlaySoundAndSeek</b> nodes trigger the events of an <b>AKSoundCue</b> asset. For <b>StartEvent</b> the playback starts at a given time (in seconds).</p>
+					<p>Node is located at: <i>New Action -> AkAudio -> AkPlaySoundAndSeek</i></p>
+					<div class="section-banner no-select"><h1>INPUTS</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">Play</div><div class="value">Calls the <b>StartEvent</b> event of the <b>AkSoundCue</b> asset assigned to its <b>SoundCue</b> variable.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Stop</div><div class="value">Calls the <b>StopEvent</b> event of the <b>AkSoundCue</b> asset assigned to its <b>SoundCue</b> variable.</div></div>
+					</div>
+					<div class="section-banner no-select"><h1>VARIABLES</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:176px">SoundCue</div><div class="value">The <b>AkSoundCue</b> asset that defines the <b>SoundBank</b> events to be called.</div></div>
+						<div class="keyvalue"><div class="key" style="width:176px">StartLocationSeconds</div><div class="value">Starting position of the sound playback (only applies to <b>StartEvent</b>).</div></div>
+					</div>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>AkPostEvent</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p><b>AkPostEvent</b> nodes trigger the events of an <b>AKSoundCue</b> asset. <b>StartEvent</b> must point to a <b>Post Event</b> in the <b>SoundBank</b>.</p>
+					<p>Node is located at: <i>New Action -> AkAudio -> AkPostEvent</i></p>
+					<div class="pwrap pblue"><p class="pcolorized">A <b>Post Event</b> is an event that triggers other event/s inside its own <b>SoundBank</b>.</p></div>		
+					<div class="section-banner no-select"><h1>INPUTS</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">Post</div><div class="value">Calls the <b>StartEvent</b> event of the <b>AkSoundCue</b> asset assigned to its <b>SoundCue</b> variable.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Stop</div><div class="value">Calls the <b>StopEvent</b> event of the <b>AkSoundCue</b> asset assigned to its <b>SoundCue</b> variable.</div></div>
+					</div>
+					<div class="section-banner no-select"><h1>OUTPUTS</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">Finished</div><div class="value">Activated if the event was triggered succesfully.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Aborted</div><div class="value">Activated if there was an error triggering the event.</div></div>
+					</div>
+					<div class="section-banner no-select"><h1>VARIABLES</h1></div>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">SoundCue</div><div class="value">The <b>AkSoundCue</b> asset that defines the <b>SoundBank</b> events to be called.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">bHasSubtitles</div><div class="value">Marks this event as captioned, has no known effect in <b>RocketLeague</b>.</div></div>
+					</div>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+		</div>
+		<script src="..\resources\common.js"></script>
+	</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./../resources/styles.css">
+	</head>
+	<body onload="parseBuses()">
+		<div class="page-content">
+			<div class="header-content">
+				<p>This page contains the required data reference you need for <b>AudioModding</b>.</p>
+				<p class="psmol">Tutorials will use ExampleAudio map package in the image references, replace the values with yours.</p>
+				<div class="header-separator"></div>
+			</div>
+			<div class="page-section">
+				<div class="section-title"><h1>WWISE AUDIO BUSES</h1></div>
+				<div class="section-content">
+					<p class="pcenter"><a class="abig" href="./../reference/RLAM_WWise_buses.pdf" target="_blank">[RLAM_WWise_buses.pdf]</a></br>
+					<b>RocketLeague</b> buses list, sorted as in the <b>RocketLeague Wwise project</b>, with little extra information.
+					</p>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title"><h1>ROCKETLEAGUE SOUNDEVENTS</h1></div>
+				<div class="section-content">
+					<p class="pcenter"><a class="abig" href="./../reference/RocketLeague_SoundEvents_Reference.xml" target="_blank">[RocketLeague_SoundEvents_Reference.xml]</a></br>
+					Sorted list of every official <b>SoundEvent</b> found in <b>RocketLeague</b> so you can use every in-game sound.
+					</p>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button"><h1 class="spoiler-mark">+</h1><h1>WWISE PROJECT</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p>The project aims to be a recreation of the one that <b>Psyonix</b> uses, everything has been built up manually from zero by decrypting the original <b>init.bnk</b> (a global bank file) and writing that data into a <b>Wwise</b> project. It has just one single purpose: To allow us generate <b>SoundBanks</b> that interact correctly with <b>RocketLeague's</b> audio system.</p>
+					<div class="pwrap pyellow"><p class="pcolorized">Do <b>NOT</b> rename anything that comes with the <b>RocketLeague Wwise Project</b>, otherwise it will stop working in-game. Also, changing anything inside any element that comes with the <b>RocketLeague Wwise Project</b> will have no effect in-game and may cause issues/crashes.</p></div>
+					
+					<p>Now here's a brief explanation of the things you'll find in the <b>RocketLeague Wwise Project</b>:</p>
+				
+					<div class="section-banner"><h1>PLACEHOLDER NAMES</h1></div>
+					<p>Internally, <b>Wwise</b> don't use names, instead it convert names into numeric values using something called -<i>fnv132 hash</i>- upon generating <b>SoundBanks</b>, knowing that, the reason you'll find weird nonsense names in some element is because those names do actually convert into the same numeric value as the original name (wich has not been found yet), allowing us to reference and use that element correctly.</p>
+					<p>Sadly, placeholder names don't give us any clue about what an element really is for or what it does, this is especially noticeable (and annoying) when working with <b>Game Parameters</b>, but it's something we have to deal with by now.</p>
+					
+					<div class="section-banner"><h1>ELEMENT COLORS</h1></div>
+					<p>I've colorized the most elements based on their decrypted state:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="keysq" style="background:#11D411"> </div><div class="value">Official Psyonix name.</div></div>
+						<div class="keyvalue"><div class="keysq" style="background:#D48811"> </div><div class="value">May be official name, may not. </div></div>
+						<div class="keyvalue"><div class="keysq" style="background:#D41111"> </div><div class="value">Placeholder name.</div></div>
+						<div class="keyvalue"><div class="keysq" style="background:#7711FF"> </div><div class="value"><b>Unusable</b>, element requires a custom <b>Wwise</b> plugin we dont have.</div></div>
+					</div>
+					<p>In addition, theres two more colors:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="keysq" style="background:#D4D411"> </div><div class="value">Elements from <b>Wwise</b> that are used in RocketLeague.</div></div>
+						<div class="keyvalue"><div class="keysq" style="background:#D4D4D4"> </div><div class="value">Project-only elements created to make modding easier.</div></div>
+					</div>
+					
+					<div class="section-banner"><h1>MISSING PLUGINS</h1></div>
+					<p>Elements using missing plugins have a placeholder plugin assigned onto the slot named with a -<i>Placeholder__MissingPlugin</i>- suffix to indicate it, and their <b>ByPass</b> option is ticked, I've added them like that just to know that the plugin is being used there. Note that having wrong names in this case doesn't matter as we wouldn't be able to use them anyway (cos missing plugin, you know).</p>
+					<p>However, you can actually use the missing plugins in-game, but only those that are already defined in <b>ShareSets</b>, just make sure to chose the one without the suffix and it'll be correctly assigned to your element in-game.</p>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button"><h1 class="spoiler-mark">+</h1><h1>ROCKETLEAGUE WWISE PLUGINS</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p>RocketLeague uses some audio plugins for <b>Wwise</b>, some of them are included with <b>Wwise</b> (AudioKinetic), while others are made by <b>Psyonix</b> or other third parties, we can only use the ones included with <b>Wwise</b>.</p>
+					<div class="section-banner"><h1>PLUGINS</h1></div>
+					<p class="psmol">Plugins are shorted as they are registered in the game.</p>
+					<ul class="list">
+						<li>Effect | PsyDynamicDelay | Psyonix</li>
+						<li>Effect | PsyMultiBandCompressor | Codemasters</li>
+						<li>Effect | PsyMusicAnalyzer | Psyonix</li>
+						<li>Effect | AudioLinkBusSend | Psyonix</li>
+						<li>Effect | Wwise Silence | AudioKinetic</li>
+						<li>Effect | Wwise Parametric EQ | AudioKinetic</li>
+						<li>Effect | Wwise Delay | AudioKinetic </li>
+						<li>Effect | Wwise Compressor | AudioKinetic</li>
+						<li>Effect | Wwise Peak Limiter | AudioKinetic</li>
+						<li>Effect | Wwise RoomVerb | AudioKinetic</li>
+						<li>Effect | Wwise Flanger | AudioKinetic</li>
+						<li>Effect | Wwise Guitar Distortion | AudioKinetic</li>
+						<li>Effect | Wwise Convolution Reverb | AudioKinetic</li>
+						<li>Effect | Wwise Meter | AudioKinetic</li> 
+						<li>Effect | Wwise Time Stretch | AudioKinetic</li>
+						<li>Effect | Wwise Tremolo | AudioKinetic</li>
+						<li>Effect | Wwise Stereo Delay | AudioKinetic</li>
+						<li>Effect | Wwise Pitch Shifter | AudioKinetic</li>
+						<li>Effect | Wwise Harmonizer | AudioKinetic</li>
+						<li>Effect | Wwise Gain | AudioKinetic</li>
+						<li>Source | Wwise Synth One | AudioKinetic</li>
+						<li>Sink | System | AudioKinetic</li>
+						<li>Sink | Controller Speaker | AudioKinetic</li>
+						<li>Sink | DefaultSink | AudioKinetic</li>
+						<li>Sink | No Output | AudioKinetic</li>
+						<li>Source | Crankcase REV Model Player | Crankcase Audio</li> 
+					</ul>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button"><h1 class="spoiler-mark">+</h1><h1>PLACEHOLDER TITLE</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p>Placeholder text</p>
+					<ul class="list">
+						<li>Placeholder list</li>
+						<li>2</li>
+						<li>3</li>
+					</ul>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+		</div>
+		<script src="..\resources\common.js"></script>
+		<script src="..\resources\tables.js"></script>
+	</body>
+</html>

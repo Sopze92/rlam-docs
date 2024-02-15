@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../resources/styles.css">
+	</head>
+	<body>
+		<div class="page-content">
+			<div class="header-content">
+				<p class="pcenter">This page contains all <b>Wwise</b> basic manual and its <b>AudioModding</b> concepts/elements you need to know about. For the installation, see <b>Setup</b> page.</p>
+				<div class="header-separator"></div>
+			</div>
+			<div class="page-section">
+				<div class="section-title no-select"><h1>IMPORTANT NOTES</h1></div>
+				<div class="section-content">
+					<div class="pwrap pyellow"><p class="pcolorized"><b>Wwise</b> sometimes may freeze when trying to generate the <b>SoundBank</b> (<b>.bnk</b>) files, forcing you to kill the process and losing your changes, so always <b>save</b> the project right before generating your <b>.bnk</b> files.</p></div>
+					<div class="pwrap pblue"><p class="pcolorized">Not every <b>Wwise</b> feature/concept is explained here, and most of them have a vague description just to make you know about their existence and usage. If you need more details take a look at the <b>Wwise Offline Documentation</b> (instructions on <b>Setup</b> page). Also note that once installed, in order to access the <b>Offline Documentation</b> you will need to tell <b>Wwise</b> to use it under the topbar menu option -<i>Help -> Documentation Source -> Offline</i>-, as it defaults to the <b>Online</b> version (discontinued).</p></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>MAIN INTERFACE</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p>This section contains a quick <b>Wwise</b> interface explanation. Most of this section is a shorter and trimmed version of the official <b>Wwise</b> documentation, excluding the elements we cannot ever use in <b>RocketLeague</b>.</p>
+					<p>There are several UI layouts for the <b>Wwise</b> interface, and they can be changed from the -<i>Layouts</i>- topbar menu, almost everything can be done with the default one, called <b>Designer</b>, but for some tasks we will need the <b>Interactive Music</b> one.</p>
+					
+					<div class="pwrap pblue"><p class="pcolorized">This is only an interface explanation, the elements referenced here will be described in the <b>Elements</b> section.</p></div>
+				
+					<div class="subsection-title-separator"></div>
+					<div class="subsection-title-center no-select"><h1>DESIGNER MODE</h1></div>
+					<div class="subsection-title-separator"></div>
+
+					<img src="../media/wwise/ui_designer.png"/>
+					
+					<div class="section-banner no-select"><h1>1. PROJECT EXPLORER</h1></div>
+					<p class="psmol">Located by default in the <i>top-left</i> of the <b>Wwise</b> window.</p>
+					<p>The <b>Project Explorer</b> is used to manage, create and organize most of the <b>Wwise</b> elements in your project, displaying them in a hierachical tree, contains 7 tabs:</p>
+					
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">Audio</div><div class="value">Displays the main assets in the project, such as <b>Buses</b> and <b>Sound/Music</b> elements.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Events</div><div class="value">Displays all the <b>Events</b> in the project. Separated by standard and dynamic dialogue events.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">SoundBanks</div><div class="value">Displays all the defined <b>SoundBanks</b> in the project.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Game-Syncs</div><div class="value">Displays the game-synched elements (<b>States</b>, <b>Switches</b>, <b>Triggers</b>, and <b>Game Parameters</b>)</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">ShareSets</div><div class="value">Displays the globally shared elements (<b>Effects</b>, <b>Attenuations</b>, <b>Conversions</b>, <b>Modulators</b>, <b>Devices</b> and <b>Virtual Acoustics</b>) </div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Sessions</div><div class="value">Displays the <b>Soundcaster</b>, <b>Mixing</b> and <b>Control Surface</b> sessions of the project.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Queries</div><div class="value">Displays all the <b>Queries</b> in the project.</div></div>
+					</div>
+					<div class="subsection-separator"></div>
+					
+					<div class="section-banner no-select"><h1>2. EVENT VIEWER</h1></div>
+					<p class="psmol">Located by default in the <i>bottom-left</i> of the <b>Wwise</b> window.</p>
+					<p>The <b>Event Viewer</b> is used to add, edit, and manage the events in the project, contains 3 tabs:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:160px">Filtered</div><div class="value">Shows all the events matching the filter you chose.</div></div>
+						<div class="keyvalue"><div class="key" style="width:160px">Current Selection</div><div class="value">Displays only the events that reference the current selection in the <b>Project Explorer</b>.</div></div>
+						<div class="keyvalue"><div class="key" style="width:160px">Orphans</div><div class="value">Here you'll find every <b>Event</b> whose actions are not yet assigned to an element.</div></div>
+					</div>
+					<p>By simply clicking on an event the <b>Property Editor</b> will show its properties.</p>
+					<div class="subsection-separator"></div>
+					
+					<div class="section-banner no-select"><h1>3. PROPERTY EDITOR / EVENT EDITOR</h1></div>
+					<p class="psmol">Located by default in the <i>top-middle</i> of the <b>Wwise</b> window.</p>
+					<P>The <b>Property Editor</b> (or <b>Event Editor</b> if an <b>Event</b> is selected) displays the properties of a selected element, the section's title shows the <b>Name</b> and <b>Type</b> of the element, also, the most common general properties you'll find are:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">Name</div><div class="value">A text-box to edit the element's name. Exported, name does matter.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Color</div><div class="value">Sets the color of this element in the hierachies that it's shown.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Notes</div><div class="value">A text-box to write custom notes, not exported, only for organizing yourself and your project.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Mute/Solo</div><div class="value">Toggle Mute/Solo for this element, only for developing, not exported.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Inclusion</div><div class="value">Checkbox that determines if this element will be included in the generation of any bank that contains it.</div></div>
+					</div>
+					<div class="pwrap pblue"><p class="pcolorized">There may be elements that don't have one or more of these common properties.</p></div>
+					<p>The rest of the properties depends on the element type you select, and they'll be displayed below the common properties, usually organized in tabs, except for <b>Events</b>.</p>
+					<div class="subsection-separator"></div>
+					
+					<div class="section-banner no-select"><h1>4. CONTENTS EDITOR</h1></div>
+					<p class="psmol">Located by default in the <i>middle</i> of the <b>Wwise</b> window.</p>
+					<p>Displays the contents and overal properties and characteristics of the selected element's child objects.</p>
+					<div class="subsection-separator"></div>
+					
+					<div class="section-banner no-select"><h1>5. TRANSPORT CONTROL</h1></div>
+					<p class="psmol">Located by default in the <i>bottom-middle</i> of the <b>Wwise</b> window.</p>
+					<p>Has controls to preview the audio playback of the current selection (if current selection is a playable element type) and test it with any combination of <b>States</b>, <b>Triggers</b>, <b>Switches</b> and <b>RPTCs</b></p>
+					<div class="subsection-separator"></div>
+					
+					<div class="section-banner no-select"><h1>6. METER VIEW</h1></div>
+					<p class="psmol">Located by default on the <i>right</i> side of the <b>Wwise</b> window.</p>
+					<p>Measures output's <b>Peak</b>, <b>True Peak</b>, <b>RMS</b>, and directional data (if 3D positioned) in a colored-graph showing the current playback values for the selected <b>Audio Bus</b> or <b>Auxiliary Bus</b>.</p>
+					<p>Graph colors are defined by dB level:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="keysq no-select" style="background:#D41111"> </div><div class="value">Over 0dB</div></div>
+						<div class="keyvalue"><div class="keysq no-select" style="background:#D4D411"> </div><div class="value">0dB to -6dB</div></div>
+						<div class="keyvalue"><div class="keysq no-select" style="background:#11D411"> </div><div class="value">Below -6dB</div></div>
+					</div>
+					
+					<div class="subsection-title-separator"></div>
+					<div class="subsection-title-center no-select"><h1>INTERACTIVE MUSIC MODE</h1></div>
+					<div class="subsection-title-separator"></div>
+
+					<img class="no-select" src="../media/wwise/ui_music.png"/>
+					
+					<p>In the <b>Interactive Music</b> mode we'll be using the only section that differs from <b>Designer Mode</b>: The <b>Music Editor</b>, wich replaces the <b>Contents Editor</b> section.</p>
+					<div class="pwrap pblue"><p class="pcolorized">You can also add the <b>Music Editor</b> section in the <b>Designer Mode</b> by going to -<i>Views -> Music Editor</i>- then docking it somewhere.</p></div>
+					
+
+					<div class="section-banner no-select"><h1>1. MUSIC EDITOR</h1></div>
+					<p class="psmol">Located by default in the <i>bottom-middle</i> of the <b>Wwise</b> window.</p>
+					<p>Has two editor types: Music Playlist Editor and Music Segment Editor, .</p>
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>1.1 MUSIC PLAYLIST EDITOR</h1></div>
+					<p>Allows you to edit the contents of a <b>Music Playlist Container</b> type and customize track parameters.</p>
+					<p>The parameters for <b>Groups</b> are:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:192px">Sequence Continuous</div><div class="value">Goes through the playlist in order. Stops after <b>N</b> repetitions of the playlist (<b>N</b> is the value of <b>Loop Count</b>).</div></div>
+						<div class="keyvalue"><div class="key" style="width:192px">Sequence Step</div><div class="value">Goes through the playlist in order. Stops after playing <b>one</b> element of the playlist.</div></div>
+						<div class="keyvalue"><div class="key" style="width:192px">Random Continous</div><div class="value">Goes through the playlist in a random way as defined in <b>Random Mode</b>. Only stops with a <b>Stop event</b>.</div></div>
+						<div class="keyvalue"><div class="key" style="width:192px">Random Step</div><div class="value">Goes through the playlist in a random way as defined in <b>Random Mode</b>. Stops after playing <b>one</b> element of the playlist.</div></div>
+						<div class="keyvalue"><div class="key" style="width:192px">Random Type</div><div class="value">Only enabled for Random playmodes, <b>Standard</b> is true random, <b>Shuffle</b> randomizes the playlist once.</div></div>
+						<div class="keyvalue"><div class="key" style="width:192px">Avoid Repeat</div><div class="value">Only enabled for Random playmodes, For each element, how many elements has to be played after it to set the element choiceable again.</div></div>
+						<div class="keyvalue"><div class="key" style="width:192px">Loop Count</div><div class="value">Times this entire playlist need to be repeated before jumping to next one (or stopping if no more).</div></div>
+					</div>
+					<p>The parameters for <b>Segments</b> are:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:192px">Weight</div><div class="value">Only enabled for Random playmodes. Weight this element has on the randomizer selection algorithm.</div></div>
+						<div class="keyvalue"><div class="key" style="width:192px">Loop Count</div><div class="value">Times this element needs to be repeated before jumping to next one.</div></div>
+					</div>
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>1.2 MUSIC SEGMENT EDITOR</h1></div>
+					<p>Displays the contents of any <b>Music Segment</b> type. This editor is intended to complex music building, but its also used for setting up and tweak <b>Music Tracks</b>.</p>
+					<p>There is a lot of features I'll not be covering here, such as custom cues, splitting and mixing <b>Music Tracks</b> or using <b>RPTCs/States</b> on them. Feel free to read the official documentation if you need to use those features in your project.</p>
+					<p>The things you need to know about are:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:192px">Entry Cue</div><div class="value">Green flag on timeline, marks the start of a segment.</div></div>
+						<div class="keyvalue"><div class="key" style="width:192px">Exit Cue</div><div class="value">Red flag on timeline, marks the end of a segment.</div></div>
+						<div class="keyvalue"><div class="key" style="width:192px">Volume Line</div><div class="value">Red line, adjust the track's volume by time.</div></div>
+						<div class="keyvalue"><div class="key" style="width:192px">High/Low Pass Line</div><div class="value">Blue line, adjust High and Low pass filters by time.</div></div>
+					</div>
+					<div class="subsection-separator"></div>
+					<div class="pwrap pyellow"><p class="pcolorized">Note that you may need to adjust the <b>Exit Cue</b> of every music track you add.</p></div>
+					<p>Controls to manipulate lines:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">Click</div><div class="value">Select a point.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Click'n'Drag</div><div class="value">Move the selected point.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Double-click</div><div class="value">Add a point at cursor position.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Right-click</div><div class="value">Select the interpolation mode of the point.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Delete</div><div class="value">Remove the selected point.</div></div>
+					</div>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>ACTION EVENTS</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					
+					<p>Action events do perform one or more actions when activated, their actions are defined on its <b>Property Editor</b> (named <b>Event Editor</b> while an <b>Event</b> is selected).</p>
+					
+					<div class="section-banner no-select"><h1>COMMON PROPERTIES</h1></div>
+					<p>Here's a quick description of the common properties for actions:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:256px">Inclusion</div><div class="value">Whether to include this action on generated <b>SoundBanks</b>.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">Type</div><div class="value">Type of action, usually defined on creation.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">Scope</div><div class="value">Scope where this action applies, for <b>Kismet</b> playback it's recommended to use <b>Global</b>.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">Target</div><div class="value">Object to perform the action on, commonly <b>Sound objects</b>, <b>Containers</b> or <b>Buses</b>.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">Delay</div><div class="value">Delay of the action execution upon being activated (in seconds).</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">Fade Time</div><div class="value">Time (in seconds) will take for <b>Fade-out Curve</b> to complete.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">Fade-out Curve</div><div class="value">Type of curve for the fade-out effect.</div></div>
+					</div>
+					<div class="pwrap pblue"><p class="pcolorized">For the <b>'All'</b> type actions, there's a button on the bottom of the <b>Event Editor</b> to add exceptions.</p></div>
+					<div class="subsection-separator"></div>
+					
+					<div class="section-banner no-select"><h1>ACTION EVENT LIST</h1></div>
+					<div class="pwrap pyellow"><p class="pcolorized">Note that '<b>All</b>' type action events are <b>NOT</b> recommended at all as they do affect the main game sounds and in some cases even break the entire sound system, forcing you to restart not only the map but the game.</p></div>
+					<div class="pwrap pyellow"><p class="pcolorized">Changes that events made to buses will <b>NOT</b> be restored by the game, you must revert any change made to them upon map exiting.</p></div>
+					<p>Quick description of most commonly used actions: </p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:172px">Play</div><div class="value">Plays selected Target</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Stop</div><div class="value">Stops selected Target and its childrens (if any).</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Pause/Resume</div><div class="value">Pause/Unpause selected Target</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Break</div><div class="value">Stops a loop or playlist, but allows current playing element to end.</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Seek</div><div class="value">Sets the playback time position on the selected Target.</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Post Event</div><div class="value">Triggers an Event.</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Mute/UnMute</div><div class="value">Mutes/Unmutes the Target, if you mute a Bus, remember to undo it on map exiting.</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Game Parameter</div><div class="value">Sets/Resets the value of a <b>Game Parameter</b>.</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Set State</div><div class="value">Activates a State.</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Set Switch</div><div class="value">Activates a Switch.</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Trigger</div><div class="value">Activates a Trigger.</div></div>
+					</div>
+					<p>Then there are some not recommended actions: </p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:172px">Set Bus Volume</div><div class="value">Sets the targeted Bus volume, must be undone on map exiting. <b>NOT</b> restored by the game.</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Reset Bus Volume</div><div class="value">Resets Target bus volume, may not work as expected in <b>RocketLeague</b>.</div></div>
+					</div>
+					<div class="subsection-separator"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>ELEMENTS</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<div class="pwrap pblue"><p class="pcolorized">I highly recommend reading the <b>Offline Documentation</b> if you want to learn about the elements, here just a few are covered (the ones you'll use the most).</p></div>
+					<div class="section-banner no-select"><h1>SOUNDS / MUSIC TRACKS</h1></div>
+					<p>General purpose <b>Sounds</b> can be used for basically everything, including music if you're lazy to create <b>Music Tracks</b> or you don't need the features of them, they can only be placed in the <b>Actor-Mixer-Hierarchy</b>.</p>
+					<p><b>Music Tracks</b> are focused on more complex music composition, they have some extra features, it's easier to make playlists, loops and transitions with <b>Music Tracks</b> than with <b>Sounds</b>,  they can only be placed in the <b>Interactive-Music-Hierarchy</b>.</p>
+					<div class="pwrap pblue"><p class="pcolorized">By convenience, <b>Psyonix</b> developers assign all <b>Sounds</b> to a <b>Bus</b> contained inside the <b>Master Primary Bus</b> while <b>Music Tracks</b> are assigned to one contained in the <b>Master Secondary Bus</b>.</p></div>
+					<div class="section-banner no-select"><h1>PLAYLIST</h1></div>
+					<p>Contain one or more playable elements (<b>Sounds</b> or <b>Music Tracks</b>) to be played sequentially, at random, elements in the playlist can be set to be repeated individually.</p>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>SOUNDBANKS</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p>Soundbanks are the product, the final object stored in a <b>.bnk</b> file.</p>
+					
+					<div class="section-banner no-select"><h1>BNK FILE</h1></div>
+					<p>
+						It's the container of the sounds and the ways to play them, and the audio objects we can add to <b>RocketLeague</b>, they can store all the needed elements that we need to create any kind of <b>Audio Mod</b>.</br>
+						The way inclusion works with <b>SoundBanks</b> is pretty easy: you tell <b>Wwise</b> which <b>Events</b> to pack in the <b>SoundBank</b>, then <b>Wwise</b> packs every element that is needed to make those <b>Events</b> work.
+					</p>
+					<div class="pwrap pyellow"><p class="pcolorized">Note that most element types will not be packed in the <b>SoundBank</b> unless they're actually beign used.</p></div>
+					<p>Here's a list of the elements that can be packed in a <b>SoundBank</b></p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:172px">Sounds</div><div class="value">Packed by default, can be packed separatelly in their own <b>.wem</b> files (not recommended).</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Music Tracks</div><div class="value">Packed by default, can be packed separatelly in their own <b>.wem</b> files (not recommended).</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Events</div><div class="value">Must be manually included on the <b>SoundBank</b> properties editor.</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Attenuations</div><div class="value">Must be custom created per-object as <b>ShareSets</b> are not included.</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Effects</div><div class="value">Must be custom created per-object as <b>ShareSets</b> are not included.</div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Switches</div><div class="value">Must be used by any element in the <b>SoundBank</b></div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">States</div><div class="value">Must be used by any element in the <b>SoundBank</b></div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Game Parameters</div><div class="value">Must be used by any element in the <b>SoundBank</b></div></div>
+						<div class="keyvalue"><div class="key" style="width:172px">Triggers</div><div class="value">Must be used by any element in the <b>SoundBank</b></div></div>
+					</div>
+					<div class="pwrap pblue"><p class="pcolorized">For more info about what you can create and include see <b>RocketLeague Limitations</b> section down below.</p></div>
+
+					<div class="section-banner no-select"><h1>WEM FILES</h1></div>
+					<p><b>.wem</b> files are compressed sound files used by <b>SoundBanks</b>, they can be packed inside the <b>.bnk</b> files or stored apart in their own files.</p>
+					<div class="pwrap pyellow"><p class="pcolorized">it is <b>NOT</b> recommended to pack sound files separatelly (as one <b>.wem</b> file per sound) as you would need to move all your files along with the <b>.bnk</b>, and as <b>.wem</b> filenames are automatically generated, there's a chance for them to conflict with files that are alread present.</p></div>
+
+					<div class="section-banner no-select"><h1>NOTES</h1></div>
+					<ul class="list">
+						<li><b>Wwise</b> will create a side-file named <b>init.bnk</b> when you generate your <b>SoundBank(s)</b>, ignore it and of course <b>never</b> replace the original RocketLeague's <b>init.bnk</b> file with yours.</li>
+						<li><b>.bnk</b> files may <b>NOT</b> work if you rename the file after its creation.</li>
+						<li><b>.wem</b> files <b>WILL NOT</b> work if you rename the file after its creation.</li>
+					</ul>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>ROCKETLEAGUE LIMITATIONS</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<div class="section-banner no-select"><h1>NEW ELEMENTS</h1></div>
+					<p>You can use any element of the <b>Wwise Rocketleague Project</b>, however, you can only <b>add new elements</b> of a few types, which are those that are exported/included in the <b>SoundBank</b> file.</p>
+					<p>In short: in the <b>SoundBank Editor</b> window in <b>Wwise</b>, only* the element types you can put there are the types you can create your own elements of. For the rest of types you need to use the elements provided with the <b>Wwise RocketLeague Project</b>.</p>
+					<p class="psmol">*Any element created and stored inside the properties of an exported element will also be exported, such as custom defined attenuations that don't use ShareSets.</p>
+					<p>Here's a list of the types you <b>cannot</b> create your own elements of in <b>RocketLeague</b>:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:128px">Languages</div><div class="value">There's no languages defined in <b>RocketLeague</b> audio, it always uses the default <b>EN/US</b> no matter the user language.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Buses</div><div class="value">Defined on original's <b>init.bnk</b> and configured to work with the devices and plugins that <b>RocketLeague</b> implements.</div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">ShareSets</div><div class="value">Defined on original's <b>init.bnk</b></div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Sessions</div><div class="value">Defined on original's <b>init.bnk</b></div></div>
+						<div class="keyvalue"><div class="key" style="width:128px">Link-Unlink</div><div class="value">Button on the left of some properties, used to un/link properties across platforms, has no usage on <b>RocketLeague</b>.</div></div>
+					</div>
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>EDITING ELEMENTS</h1></div>
+					<p>This is even shorter: You <b>cannot</b> edit anything you haven't created.</p>				
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+		</div>
+		<script src="..\resources\common.js"></script>
+	</body>
+</html>

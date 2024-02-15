@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="./../resources/styles.css">
+	</head>
+	<body>
+		<div class="page-content">
+			<div class="header-content">
+				<p>This page will be covering the installation of <b>AudioKinetic Wwise</b> for the <b>Windows OS</b>.</p>
+				<p class="psmol">*<b>Wwise</b> is <b>FREE</b> for non-commercial use, the free version is limited to 200 sound files per soundbank.</p>
+				<div class="header-separator"></div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>DOWNLOADING THE AUDIOKINETIC LAUNCHER</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<ul class="list">
+						<li>Go to <a href="https://www.audiokinetic.com" target="_blank">www.audiokinetic.com</a> and login or signup.</br><p class="psmol">If you just signed up, you'll need to verify your email and wait for your account to be verified before being able to download anything from the site. Could take longer than other websites.</p></li>
+						<li>Head to the <a href="https://www.audiokinetic.com/en/download/" target="_blank">downloads page</a> and click the huge blue button that reads -<i>Download AudioKinetic Launcher</i>-.</br><p class="psmol">The version we need for <b>RocketLeague</b> is <b>NOT</b> under -<i>Older Versions</i>-.</p></li>
+						<li>Install the <b>AudioKinetic Launcher</b> you just downloaded.</li>
+					</ul>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>WWISE INSTALLATION</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<ul class="list">
+						<li>Open the <b>AudioKinetic Launcher</b> and login into your account at the top right corner.<p class="psmol">By default it's located under -<i>C:\Program Files\Audokinetic Launcher</i>-</p></li>
+						<li>Go to -<i>Wwise</i>- section on the left navbar.</li>
+						<li>Select the correct version (image on the right) and click -<i>Install</i>-</li><img class="list-right no-select" src="..\media\setup_wwise_version.png"/>
+						<li>Check <img class="list-inner no-select" src="..\media\setup_wwise_check.png"/> -<i>Authoring</i>- and -<i>Offline Documentation</i>- packages.<p class="psmol">Documentation is optional, but you might want to install it as there's no official help online for this specific version anymore.</p></li>
+						<li>Under <b>Target directory</b> you can set where to install Wwise.</li>
+						<li>Click -<i>Next</i>-.</li>
+						<li>You wont need any <b>Plug-In</b>, you can deselect them clicking on the -<i>Deselect all</i>- button at the top right corner.</li>
+						<li>Click -<i>Install</i>- and wait for it to finish.</li>
+					</ul>
+					<div class="pwrap pgreen"><p class="pcolorized">If everything goes right, You're done installing <b>Wwise</b>. Head to <b>RocketLeague Wwise Project</b> section below to continue.</p></div>
+					<div class="pwrap pred"><p class="pcolorized">If the launcher fails to install <b>Wwise</b>, open the <b>FIX: Offline Wwise Installation</b> section and follow the instructions there.</p></div>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>ROCKETLEAGUE WWISE PROJECT</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p>Now that we have <b>WWise</b> installed. We will need the <b>Wwise's RocketLeague-compatible project</b> to be able to make our sounds play through valid audio channels.</p>
+					<p>All the files can be found on the <a href="#" target="_blank">Rocket League Wwise Project</a> <b>Google Drive</b> folder, wich includes:</p>
+					<div class="dictionarycontainer">
+						<div class="keyvalue"><div class="key" style="width:256px">RLAM_Documentation</div><div class="value">Folder containing the latest version of this documentation.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">MyRocketLeagueProject.zip</div><div class="value">A full <b>Wwise</b> base project template required for <b>AudioModding</b>.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">ExampleMap</div><div class="value">A folder containing a working example of a <b>bank</b> and a <b>map</b> for you to experiment and try the features in-game.</div></div>
+						<div class="keyvalue"><div class="key" style="width:256px">ExampleProject.zip</div><div class="value">The <b>Wwise</b> project used to generate ExampleMap's bank as well as the example map in UDK format.</div></div>
+					</div>
+					<p>Feel free to open and explore any of the example files.</p>
+					<div class="pwrap pblue"><p class="pcolorized">
+					I've tried my best to make the <b>Example's UDK</b> map file compatible with the default <b>RLMM UDK</b> installation, still... it may give you some errors on loading as I've 
+					strongly modified my UDK installation by adding/modifying scripts for the sake of further investigation, and I have not installed any of the <b>dummy-assets</b>.
+					</p></div>
+					<div class="section-banner no-select"><h1>SETTING UP A PROJECT</h1></div>
+					<p>I strongly recommend having one project per map, otherwise the project may get messy too fast.</p>
+					<p>
+					Download the -<i>MyRocketLeagueProject.zip</i>- file and drop its contents somewhere. You can rename the main folder as well as the <b>.wproj</b> project-file inside.<br>
+					Names doesn't need to match, project name in <b>Wwise</b> program is determined solely by the <b>.wproj</b> project-file name.
+					</p>
+					<p class="psmol"><b>Wwise's</b> default project-folder is located at -<i>Documents\WwiseProjects\</i>-, the folder will be automatically created on Wwise's first run.</p>
+					<p>You're indeed done, project should be functional now. However, if is your first time doing it you should know a few extra things:</p>
+					<ul class="list">
+						<li><b>Wwise</b> will generate your <b>.bnk</b>/<b>.wem</b> files under the -<i>GeneratedSoundBanks</i>- folder by default.</li>
+						<li>Project data is saved in <b>.wwu</b> files, these files are <b>XML</b> encoded and can be edited with any text-editor, but don't do it unless you know what you're doing.</li>
+						<li>You don't need to share the entire project to make your sound work for other users, only the generarted <b>.bnk</b>/<b>.wem</b> files are needed.</li>
+					</ul>
+					<div class="pwrap pred"><p class="pcolorized">Project-files association with <b>Wwise</b> may be broken so you should try opening it by double-clicking, if it fails go to the section <b>FIX: Project Files Association</b> below. This is not mandatory as you can always open your project through the <b>Wwise</b> program instead of  double-clicking the project-file.</p></div>
+					<div class="subsection-separator"></div>
+					<div class="section-banner no-select"><h1>TESTING THE EXAMPLE MAP</h1></div>
+					<p>Go into the -<i>ExampleMap</i>- folder in <b>Google Drive</b>, download the -<i>ExampleBank.bnk</i>- file and move it into your -<i>CookedPCConsole</i>- folder.</p>
+					<p>
+					If you're using the <b>Workshop Map Loader</b> Plugin by <b>Vync_</b>: download the -<i>ExampleAudioWML.zip</i>- file and drop its contents into your -<i>CookedPCConsole\mods\</i>- folder.</br>
+					If you don't, then download the -<i>ExampleAudio.upk</i>- file and place it into your -<i>CookedPCConsole</i>- folder, then swap the file with any other map from the game.
+					</p>
+					<p>Start the game and play the map as you usually do with any other custom map. Follow the in-game instructions and explore the map at your will.<p class="psmol">Note that only Freeplay Mode is allowed on this map.</p></p>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>FIX: OFFLINE WWISE INSTALLATION</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p>
+					On this section we will be installing the program manually.</br>
+					For this, make sure you have a file unzipper tool able to read <b>*.tar</b> and <b>*.xz</b> files such as <i>7-Zip</i> or <i>WinRar</i>.
+					</p>
+					<ul class="list">
+						<li>Repeat the installation steps until you have the version selected, but this time click the -<i>Create offline installer</i>- button.</li>
+						<li>In the offline installer, -<i>Target Directory</i>- will be used to store the installation files so you might want to choose a temporary folder (you'll need to navigate there later).</li>
+						<li>Repeat the rest of the steps and wait for it to finish creating the offline installer.</li>
+						<div class="list-separator"></div>
+						<li>Now you'll need to create a new folder somewhere to unzip the program files into (I'll be calling -<i>MyWwise</i>- to that folder on this guide).</l>
+						<li>Close the launcher and navigate to the -<i>Target directory</i>-<p class="psmol">Ignore the setup executable located on that folder, it's part of the launcher setup so it will fail too.</p></li>
+						<li>Go into the -<i>bundle</i>- folder and locate the files starting with -<i>Wwise_v2019...</i>-.<p class="psmol">Ignore the -<i>Wwise.app.zip</i>-, that file is for MAC computers.</p></li>
+						<p>Every -<i>Wwise_v2019...</i>- file will contain another zipped file inside that will contain a folder called -<i>Authoring</i>-.</p>
+						<li>Move all -<i>Authoring</i>- folders into your -<i>MyWwise</i>- folder, say yes to combine folders when asked.</li>
+						<li>Once done, move your -<i>MyWwise</i>- folder to wherever you want the program to be located on, that's the actual program folder.<p class="psmol">The <b>Wwise</b> executable is at -<i>MyWwise\Authoring\x64\Release\bin\Wwise.exe</i>-.</p></li>
+					</ul>
+					<div class="pwrap pgreen"><p class="pcolorized">You're done, you should be able to execute <b>Wwise</b> without problems now. Head to <b>RocketLeague Wwise Project</b> section above to continue.</p></div>
+					<div class="section-separator bottom"></div>
+				</div>
+			</div>
+			<div class="page-section">
+				<div class="section-title-spoiler spoiler-button no-select"><h1 class="spoiler-mark">+</h1><h1>FIX: PROJECT FILES ASSOCIATION</h1></div>
+				<div class="section-content spoiler-content">
+					<div class="section-separator top"></div>
+					<p>
+					The <b>AudioKinetic Launcher</b> may give you an error when trying to open a Project file by double-clicking on it.<br>
+					If you're on <b>Windows</b>, the fix is pretty easy and fast:
+					</p>
+					<ul class="list">
+						<li>Locate your project file, the one with the <b>AudioKinetic</b> <img class="list-inner no-select" src="..\media\audiokinetic_icon.png"/> icon.</li>
+						<li>Right-click the file and select -<i>Open With -> Choose another app</i>- on the context menu.</li>
+						<li>Click on -<i>More Apps</i>- and check the box -<i>Always use this app to open .wproj files</i>-.</li>
+						<li>Scroll all the way down and click on -<i>Look for another app on this PC</i>-.</li>
+						<li>Navigate to your <b>Wwise</b> executable and select it.<p class="psmol">The <b>Wwise</b> executable is located under the folder you installed the program, at -<i>..\Authoring\x64\Release\bin\Wwise.exe</i>-.</p></li>
+					</ul>
+					<div class="pwrap pgreen"><p class="pcolorized">You're done, now <b>Wwise</b> should open all your project files by double-clicking them. Repeat the proccess if you ever move the program to another folder.</p></div>
+					<div class="section-separator bottom"></div>
+					<div class="endofpage-blankspace"></div>
+				</div>
+			</div>
+		</div>
+		<script src="..\resources\common.js"></script>
+	</body>
+</html>
